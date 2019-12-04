@@ -7,3 +7,4 @@ This line was added from Copy
 Merge Conflict example from original FinalProject
 
 This is for practice with git stash
+This is for branch practice
