@@ -1,0 +1,511 @@
+Script started on Tue 03 Dec 2019 01:18:49 PM EST
+[?1034hbash-4.2$ history
+    1  srun --pty R
+    2  srun --pty bash
+    3  srun --pty 
+    4  srun --pty bash
+    5  cd samtools-1.x
+    6  ls
+    7  cd ./
+    8  ls
+    9  cd cd \samtools-1.x
+   10  ls
+   11  cd ~
+   12  ls
+   13  man samtools
+   14  samtools view -H celegans.sam
+   15  https://github.com/vsbuffalo/bds-files.g
+   16  git clone git@github.com:vsbuffalo/bds-files.git
+   17  ssh-keygen -t rsa -b 4096 -C ogs1@hood.edu
+   18  ls -al ~/.ssh
+   19  clip < ~/.ssh/id_rsa.pub
+   20  man clip
+   21  srun --pty bash
+   22  ls
+   23  cd bds-files/
+   24  ls
+   25  scp --pty 
+   26  man samtools
+   27  man hmmer
+   28  srun --pty bash
+   29  R
+   30  ls
+   31  cd R
+   32  ls
+   33  cd x86_64-redhat-linux-gnu-library
+   34  ls
+   35  cd 3.6
+   36  ls
+   37  cd BiocManager
+   38  ls
+   39  view help
+   40  ls
+   41  R
+   42  ls
+   43  cd R
+   44  ls
+   45  cd x86_64-redhat-linux-gnu-library/
+   46  ls
+   47  cd 3.6
+   48  ls
+   49  cd BiocManager
+   50  ls
+   51  DESCRIPTION
+   52  cd DESCRIPTION
+   53  read DESCRIPTION 
+   54  R
+   55  ls
+   56  cd ./
+   57  ls
+   58  cd ../
+   59  ls
+   60  cd ../
+   61  ls
+   62  cd ../ | ls
+   63  cd ../
+   64  ls
+   65  man ls
+   66  cd ../
+   67  ls
+   68  cd ../
+   69  ls
+   70  cd ogs1
+   71  ls
+   72  cd bds-files/
+   73  ls
+   74  cd chapter-09-working-with-range-data/
+   75  ls
+   76  cd ../
+   77  ls
+   78  cd ../
+   79  ls
+   80  cd R
+   81  ls
+   82  library(BiocManager)
+   83  R
+   84  ls
+   85  cd x86_64-redhat-linux-gnu-library/
+   86  ls
+   87  cd 3.6
+   88  ls
+   89  cd BiocManager
+   90  ls
+   91  cd ../
+   92  cd BiocVersion
+   93  ls
+   94  cd INDEX
+   95  cd Meta
+   96  ls
+   97  cd package.rds
+   98  head package.rds
+   99  ls
+  100  cd ../
+  101  ls
+  102  cd ../
+  103  ls
+  104  R
+  105  ls
+  106  R
+  107  q
+  108  R
+  109  ls
+  110  cd R
+  111  ls
+  112  cd x86_64-redhat-linux-gnu-library/
+  113  ls
+  114  cd 3.6
+  115  ls
+  116  R
+  117  ls
+  118  R
+  119  samtools --version
+  120  samtools version
+  121  samtools -version
+  122  apt-show-versions samtools
+  123  dpkg -s samtools
+  124  ls
+  125  cd ../
+  126  ls
+  127  cd ogs1
+  128  ls
+  129  man samtools
+  130  head -n celegans.sam
+  131  head -n 10 celegans.sam
+  132  ls
+  133  cd bds-files/chapter-11-alignment/
+  134  head -n 10 celegans.sam
+  135  sametools view -H celegans.sam
+  136  samtools view -H celegans.sam
+  137  samtools view -h celegans.sam
+  138  samtools view -hS celegans.sam
+  139  CA      22222222222222222222222222222222222222222222222222      NM:i:0  MD:Z:50 AS:i:50 XS:i:19 RG:Z:VB00023_L001
+  140  V_2312838_2313331_4:0:0_0:0:0_e0b4      163     V       2312838 60      50M     =       2313282 494     CTTTGCGTAAGATGCATGATGCAATATTCTGAAAAATTAATATTTGTATT      22222222222222222222222222222222222222222222222222      NM:i:4  MD:Z:11T3T18T0T14       AS:i:30 XS:i:19 RG:Z:VB00023_L001
+  141  V_5070839_5071337_2:0:0_0:0:0_e6db      83      V       5071288 60      50M     =       5070839 -499    AAGAAGAAAAAGGAAGAACTACATTCAATTGATTTTTTGAAAAATGATTT      22222222222222222222222222222222222222222222222222      NM:i:0  MD:Z:50 AS:i:50 XS:i:22 RG:Z:VB00023_L001
+  142  V_5070839_5071337_2:0:0_0:0:0_e6db      163     V       5070839 60      50M     =       5071288 499     ATGTTGAAATTCTGAGAAAAATGTTGTATGAAACAATGGAGAAAAAGTGC      22222222222222222222222222222222222222222222222222      NM:i:2  MD:Z:15C16T17   AS:i:40 XS:i:20 RG:Z:VB00023_L001
+  143  V_6722310_6722779_2:0:0_1:0:0_fa53      99      V       6722310 60      50M     =       6722730 470     TAATCGCGGTAATAACTGATACATTGAAAAAATTTGAAATCAGGGAAAAT      22222222222222222222222222222222222222222222222222      NM:i:2  MD:Z:18T6C24    AS:i:40 XS:i:19 RG:Z:VB00023_L001
+  144  V_6722310_6722779_2:0:0_1:0:0_fa53      147     V       6722730 60      50M     =       6722310 -470    AGGTTGCATATATCTTTGTTGTTGTGCTTCATTTCCTTTTTTAGAGAAGG      22222222222222222222222222222222222222222222222222      NM:i:1  MD:Z:17T32      AS:i:45 XS:i:19 RG:Z:VB00023_L001
+  145  V_3824542_3824966_1:0:0_0:0:0_11491     83      V       3824917 60      50M     =       3824542 -425    CCTTTTTGGATTTAACAAAAAACTTGGCATGACGAGACCGTATATATAGC      22222222222222222222222222222222222222222222222222      NM:i:0  MD:Z:50 AS:i:50 XS:i:0  RG:Z:VB00023_L001
+  146  V_3824542_3824966_1:0:0_0:0:0_11491     163     V       3824542 60      50M     =       3824917 425     TTAACAAAAGCGCTGAGAAATAGGAGTGCTAAAATTTTTTGGAGTAGTGG      22222222222222222222222222222222222222222222222222      NM:i:1  MD:Z:45T4       AS:i:45 XS:i:0  RG:Z:VB00023_L001
+  147  V_11402405_11402844_2:0:0_0:0:0_114dd   99      V       11402405        60      50M     =       11402795        440     CACCCGCTGTACAGCATTATGATCCTCATTGAACCTGATGCAAGTGTGAT      22222222222222222222222222222222222222222222222222      NM:i:2  MD:Z:3A14T31    AS:i:41 XS:i:0  RG:Z:VB00023_L001
+  148  V_11402405_11402844_2:0:0_0:0:0_114dd   147     V       11402795        60      50M     =       11402405        -440    TTTTTCATATAAAACTACAATATTTTTCATGTGTCATAACGCCAGAAGGA      22222222222222222222222222222222222222222222222222      NM:i:0  MD:Z:50 AS:i:50 XS:i:0  RG:Z:VB00023_L001
+  149  V_13234024_13234619_1:0:0_0:0:0_11b1d   83      V       13234570        60      50M     =       13234024        -596    AACATGTTTGCCAATTACTTGGCTGGCGAAAACATTTCAGCCAGAAAAAA      22222222222222222222222222222222222222222222222222      NM:i:0  MD:Z:50 AS:i:50 XS:i:0  RG:Z:VB00023_L001
+  150  V_13234024_13234619_1:0:0_0:0:0_11b1d   163     V       13234024        60      50M     =       13234570        596     AGAAACAGCATCCGAGTTAATTTGTGATCAGATATGCAACATAATTTTTT      22222222222222222222222222222222222222222222222222      NM:i:1  MD:Z:6T43       AS:i:45 XS:i:0  RG:Z:VB00023_L001
+  151  tee -a chapter11
+  152  man tee
+  153  tee chapter_11_exercises
+  154  cd bds-files/chapter-11-alignment/
+  155  samtools view -hS celegans.sam 
+  156  samtools view -HS celegans.sam 
+  157  samtools view -H celegans.bam
+  158  samtools view -H celegans.bam | grep "^@RG"
+  159  samtools view -S celegans.sam| head -n 1
+  160  samtools view -S celegans.sam| tr '\t' '\n' | head -n 11
+  161  samtools flags
+  162  flags
+  163  man samtools flags
+  164  samtools flags
+  165  samtools Flags
+  166  samtools flags 147
+  167  R
+  168  ls
+  169  R
+  170  srun --pty R
+  171  $ samtools view -b celegans.sam > celegans_copy.bam
+  172  samtools
+  173  $ samtools view -b celegans.sam > celegans_copy.bam
+  174  samtools view
+  175  $ samtools view -bS celegans.sam > celegans_copy.bam
+  176  samtools view -Sh celegans.sam
+  177  ls
+  178  cd bds-files/chapter-11-alignment/
+  179  samtools view -Sh celegans.sam
+  180  $ samtools view -bS celegans.sam > celegans_copy.bam
+  181  samtools view -h celegans_copy.bam
+  182  cd ../
+  183  ls
+  184  cd ../
+  185  ls
+  186  rm celegans_copy.bam
+  187  rm chapter11
+  188  rm chapter_11_exercises 
+  189  rm Chapter_9 
+  190  ls
+  191  cd bds-files
+  192  cd chapter-11-alignment/
+  193  samtools view -H celegans.bam
+  194  samtools view -HS celegans.sam
+  195  samtools view -b celegans.sam > celegans_copy.bam
+  196  samtools view -bS celegans.sam > celegans_copy.bam
+  197  man samtools
+  198  man echo
+  199  man bc
+  200  pip install pysam
+  201  pysam
+  202  import pysam
+  203  man pysam
+  204  ##Configure git username and email 
+  205  git config --global user.name "LivStanley"
+  206  git config --global user.email "ogs1@hood.edu"
+  207  ##Enable terminal colors
+  208  git config --global color.ui true
+  209  ##Initialize git repository for my final project
+  210  mkdir ~/BIFX552/FinalProject
+  211  mkdir ~/FinalProject
+  212  git init ~/FinalProject/
+  213  ##View hidden git directory in initialized directory 
+  214  ls -a ~/FinalProject/
+  215  ##Transfer to FinalProject directory
+  216  cd ~/FinalProject/
+  217  ##Make new directory for cloning and compiling tools
+  218  mkdir ~/CloneAndCompile/
+  219  ##Set permissions to only myself
+  220  chmod 700 ~/CloneAndCompile/
+  221  ##transfer to CloneAndCompile
+  222  cd ~/CloneAndCompile/
+  223  ##Clone Seqtk repository
+  224  git clone git://github.com/lh3/seqtk.git
+  225  ##Move to Seqtk directory
+  226  cd seqtk
+  227  ##View contents of seqtk
+  228  ls seqtk
+  229  ls
+  230  exit
+  231  man script
+  232  script chap5.txt
+  233  exit
+  234  cd ~/FinalProject/
+  235  ##Check the git status of FinalProject
+  236  git status
+  237  ##Make blank readme files
+  238  touch README.txt
+  239  ##Make subdirectory data
+  240  mkdir data
+  241  ##Set permissions
+  242  chmod 755 data
+  243  ##Create readme file in data
+  244  touch data/README.txt
+  245  ##Tell git to track both readme.txt files
+  246  git add README.txt data/README.txt
+  247  ##List contents of FinalProject
+  248  ls
+  249  ##Verify README files are being tracked
+  250  git status
+  251  ##Edit readme file
+  252  echo "Final Project For BIFX 552" >> README.txt
+  253  ##Check status after editing
+  254  git status
+  255  ##Stage new changes to readme
+  256  git add README.txt
+  257  ##Check status to verify staging
+  258  git status
+  259  ##Commit staged files and changes with a message "initial import"
+  260  git commit -m "initial import"
+  261  ##Change default text editor
+  262  git config --global core.editor vim
+  263  ##Shortcut to stage all tracked files' changes with -a for all and -m for message
+  264  git commit -a -m "Includes all changes"
+  265  ##Check that there is nothing staged
+  266  git status
+  267  ##edit readme
+  268  echo "Project started 12-01-2019" >> README.txt
+  269  ##View difference between last commit and current version of file (only if current change has not been staged)
+  270  git diff
+  271  ##Stage readme edit
+  272  git add README.txt 
+  273  ##Check differences again
+  274  git diff
+  275  ##View differences between the latest commit and currently staged file
+  276  git diff --staged
+  277  ##View chain of commits
+  278  git log
+  279  ##commit recent changes
+  280  git commit -a -m "Added project start date to README"
+  281  ##View commit history again
+  282  git log
+  283  ##Add .md extension to README and data/README 
+  284  git mv README.txt README.md
+  285  git mv data/README.txt data/README.md
+  286  ##View files in directory to check for .md extension
+  287  ls
+  288  ##Check that changes are stages and ready for commit
+  289  git status
+  290  ##Commit file namechanges
+  291  git commit -m "added markdown extensions to README files"
+  292  exit
+  293  ls
+  294  script -a chap5.txt 
+  295  history
+  296  script -a chap5.txt
+  297  ##Generate empty FASTQ sequence files
+  298  ls
+  299  cd FinalProject/
+  300  ls
+  301  mkdir data/seqs/gene{A..D}_R{1,2}
+  302  mkdir /data/seqs/gene{A..D}_R{1,2}.fastq
+  303  mkdir -p /data/seqs/gene{A..D}_R{1,2}.fastq
+  304  mkdir -p data/seqs/gene{A..D}_R{1,2}.fastq
+  305  ##Check files were generated
+  306  ls
+  307  cd data
+  308  ls
+  309  cd seqs
+  310  ls
+  311  exit
+  312  script -a chap5.txt 
+  313  ##Move to Final Project directory and add .gitignore file
+  314  cd FinalProject/
+  315  touch .gitignore
+  316  ##Edit .gitignore to ignore fastq files
+  317  echo "data/seqs/*.fastq" >> .gitignore
+  318  ##Check git status for .gitignore
+  319  git status
+  320  ##Stage the .gitignore file
+  321  git add .gitignore 
+  322  ##Check that .gitignore file is staged
+  323  git status
+  324  ##Commit .gitignore
+  325  git commit -m "Added .gitignore"
+  326  ##Create a global .gitignore file
+  327  touch ~/.gitignore_global
+  328  ##Configure .gitignore_global
+  329  git config -- global core.excludesfile ~/.gitignore_global 
+  330  git config --global core.excludesfile ~/.gitignore_global
+  331  ##Unstage a file you do not want to commit yet
+  332  echo "TODO: ask sequencing center abt adapters" >> README.md 
+  333  git add README.md 
+  334  git status
+  335  git reset HEAD README.md 
+  336  ##Check reset was successful
+  337  git status
+  338  ##Generate an SSH key pair
+  339  ssh-keygen -b 2048
+  340  ssh
+  341  ##Change to .ssh directory
+  342  cd ~/.ssh
+  343  ##Append contents of public key to authorized keys file
+  344  cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+  345  ##Start ssh-agent
+  346  eval $(ssh-agent -s)
+  347  ##Add your private key to the ssh agent
+  348  ssh-add ~/.ssh/id_rsa
+  349  exit
+  350  ls
+  351  cd FinalProject/data/seqs/
+  352  cd seqs\data\FinalProject
+  353  cd ../
+  354  ls
+  355  cd ../\
+  356  ls
+  357  script -a chap5.txt 
+  358  git remote -v
+  359  git push origin master
+  360  ssh -T git@github.com
+  361  git remote -v
+  362  logout
+  363  git config --global user.name "LivStanley"
+  364  git congig --global user.email "ogs1@hood.edu"
+  365  git config --global user.email "ogs1@hood.edu"
+  366  ssh -T git@github.com
+  367  scp --pty bash
+  368  git status
+  369  exit
+  370  history
+bash-4.2$ bash-4.2$ ##Create FinalProject public repository on github.com
+bash: bash-4.2$: command not found
+bash-4.2$ bash-4.2$ ##push commits to public repository[1P[1P[1P[1P[1P[1P[1P[1P[1P[C[1P
+bash-4.2$  git push origin master[C[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Warning: Permanently added the RSA host key for IP address '140.82.114.4' to the list of known hosts.
+Everything up-to-date
+bash-4.2$ Clone [K[K[K[K[K[K##Clone public repositlry [K[K[K[K[Ktory to different direct[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kc[KClone [Kan[K[KAnd [KCompile
+bash-4.2$ [Kbash-4.2$ cd ~/CloneAndCompile/
+bash-4.2$ mkdir FinalProject_Copy
+bash-4.2$ chmod 755 FinalProject_Copy/
+bash-4.2$ git clone git@github.com>L[K[K:LivStanley/FinalProject FinalProject_copy/[1Popy/Copy/[C[C[C[C
+Cloning into 'FinalProject_Copy'...
+remote: Enumerating objects: 14, done.[K
+remote: Counting objects:   7% (1/14)[Kremote: Counting objects:  14% (2/14)[Kremote: Counting objects:  21% (3/14)[Kremote: Counting objects:  28% (4/14)[Kremote: Counting objects:  35% (5/14)[Kremote: Counting objects:  42% (6/14)[Kremote: Counting objects:  50% (7/14)[Kremote: Counting objects:  57% (8/14)[Kremote: Counting objects:  64% (9/14)[Kremote: Counting objects:  71% (10/14)[Kremote: Counting objects:  78% (11/14)[Kremote: Counting objects:  85% (12/14)[Kremote: Counting objects:  92% (13/14)[Kremote: Counting objects: 100% (14/14)[Kremote: Counting objects: 100% (14/14), done.[K
+remote: Compressing objects:  11% (1/9)[Kremote: Compressing objects:  22% (2/9)[Kremote: Compressing objects:  33% (3/9)[Kremote: Compressing objects:  44% (4/9)[Kremote: Compressing objects:  55% (5/9)[Kremote: Compressing objects:  66% (6/9)[Kremote: Compressing objects:  77% (7/9)[Kremote: Compressing objects:  88% (8/9)[Kremote: Compressing objects: 100% (9/9)[Kremote: Compressing objects: 100% (9/9), done.[K
+remote: Total 14 (delta 0), reused 14 (delta 0), pack-reused 0[K
+Receiving objects:   7% (1/14)   Receiving objects:  14% (2/14)   Receiving objects:  21% (3/14)   Receiving objects:  28% (4/14)   Receiving objects:  35% (5/14)   Receiving objects:  42% (6/14)   Receiving objects:  50% (7/14)   Receiving objects:  57% (8/14)   Receiving objects:  64% (9/14)   Receiving objects:  71% (10/14)   Receiving objects:  78% (11/14)   Receiving objects:  85% (12/14)   Receiving objects:  92% (13/14)   Receiving objects: 100% (14/14)   Receiving objects: 100% (14/14), done.
+bash-4.2$ ##Verify both repositories have the same commits
+bash-4.2$ git log
+fatal: Not a git repository (or any parent up to mount point /home)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+bash-4.2$ cd Final_pr[K[KO[KP[K[K[K[K[K[K[K/FinalProject_Copy[1PFinalProject_Copy[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/
+bash-4.2$ git log
+[?1h=[33mcommit ed296198d245e94800a9cd99b976a8446653e34e[m[m
+Author: LivStanley <ogs1@hood.edu>[m
+Date:   Mon Dec 2 21:21:47 2019 -0500[m
+[m
+    Added .gitignore[m
+[m
+[33mcommit cdd871779820953e786d56c45a2925840671ca2b[m[m
+Author: LivStanley <ogs1@hood.edu>[m
+Date:   Sun Dec 1 23:50:39 2019 -0500[m
+[m
+    added markdown extensions to README files[m
+[m
+[33mcommit 3226c88e12edd16c5aaeefd122335c2072ad258e[m[m
+Author: LivStanley <ogs1@hood.edu>[m
+Date:   Sun Dec 1 23:30:29 2019 -0500[m
+[m
+    Added project start date to README[m
+[m
+[33mcommit 1c1f528e79ddc1275b3a54522316121e666e4ce3[m[m
+Author: LivStanley <ogs1@hood.edu>[m
+:[K[KDate:   Sun Dec 1 22:50:04 2019 -0500[m
+:[K[K[m
+:[K[K    initial import[m
+:[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K[?1l>bash-4.2$ ##Edit original FI[KinalProject readme
+bash-4.2$ cd ~/FinalProject/
+bash-4.2$ echo :[K"Samples[K[K[K[K[K[K[KThis is a new edit" >> README.md 
+bash-4.2$ ##Commit changes
+bash-4.2$ git commit -a -m "added a line"
+[master 2340c34] added a line
+ 1 file changed, 2 insertions(+)
+bash-4.2$ git push po[K[Korigin mat[Kster
+Counting objects: 5, done.
+Delta compression using up to 16 threads.
+Compressing objects:  33% (1/3)   Compressing objects:  66% (2/3)   Compressing objects: 100% (3/3)   Compressing objects: 100% (3/3), done.
+Writing objects:  33% (1/3)   Writing objects:  66% (2/3)   Writing objects: 100% (3/3)   Writing objects: 100% (3/3), 410 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To git@github.com:LivStanley/FinalProject.git
+   ed29619..2340c34  master -> master
+bash-4.2$ ##Switch to FinalProject_Copuy[K[Ky
+bash-4.2$ cd ~Final[K[K[K[K[K/Foma[K[K[KinalProject/[K_copy/[K[K[K[K[KCopy/
+bash: cd: /home/ogs1/FinalProject_Copy/: No such file or directory
+bash-4.2$ cd ~/FinalProject_Copy/[C[C[C[C[C[C[C[C[C[C[C[1P/[1P/[1P/[1P/[1P/[1P/[1P/[1P/[1P/[1P/[1P/[1P/[1P/[1P/[1P/[1P/[1P/[C[KCloneAndCompile/FinalProject_Copy/
+bash-4.2$ ##Pull new edits to update copy
+bash-4.2$ gir puy[K[K[K[K[Kt pull origin master
+Warning: Permanently added the RSA host key for IP address '192.30.253.113' to the list of known hosts.
+remote: Enumerating objects: 5, done.[K
+remote: Counting objects:  20% (1/5)[Kremote: Counting objects:  40% (2/5)[Kremote: Counting objects:  60% (3/5)[Kremote: Counting objects:  80% (4/5)[Kremote: Counting objects: 100% (5/5)[Kremote: Counting objects: 100% (5/5), done.[K
+remote: Compressing objects:  33% (1/3)[Kremote: Compressing objects:  66% (2/3)[Kremote: Compressing objects: 100% (3/3)[Kremote: Compressing objects: 100% (3/3), done.[K
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0[K
+Unpacking objects:  33% (1/3)   Unpacking objects:  66% (2/3)   Unpacking objects: 100% (3/3)   Unpacking objects: 100% (3/3), done.
+From github.com:LivStanley/FinalProject
+ * branch            master     -> FETCH_HEAD
+Updating ed29619..2340c34
+Fast-forward
+ README.md | 2 [32m++[m
+ 1 file changed, 2 insertions(+)
+bash-4.2$ ##Verify copy is up to [K[K[K[K[K[Kcurrent
+bash-4.2$ gir[Kt log --pretty=oneline --abbrev-commit
+[?1h=[33m2340c34[m added a line[m
+[33med29619[m Added .gitignore[m
+[33mcdd8717[m added markdown extensions to README files[m
+[33m3226c88[m Added project start date to README[m
+[33m1c1f528[m initial import[m
+[K[?1l>bash-4.2$ ##Make and commit changes in Final [KProjectCop[K[K[K_copy[K[K[K[KCopy
+bash-4.2$ echo "Adding a new lin f[K[Ke in copy"[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K"This line was added from Copuy[K[Ky" >> Re[KEADME.md 
+bash-4.2$ fit commit -a -,[Km "Added a line from Copy"[1P[1@g[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[master ffb7bd7] Added a line from Copy
+ 1 file changed, 1 insertion(+)
+bash-4.2$ git[K[K[K##Push changes tpo [K[K[Kp [K[Ko remote repository
+bash-4.2$ git push origin master
+Counting objects: 5, done.
+Delta compression using up to 16 threads.
+Compressing objects:  33% (1/3)   Compressing objects:  66% (2/3)   Compressing objects: 100% (3/3)   Compressing objects: 100% (3/3), done.
+Writing objects:  33% (1/3)   Writing objects:  66% (2/3)   Writing objects: 100% (3/3)   Writing objects: 100% (3/3), 371 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To git@github.com:LivStanley/FinalProject
+   2340c34..ffb7bd7  master -> master
+bash-4.2$ ##Switch to original FinalProject and pu;;[K[Kll Copy edits
+bash-4.2$ cd ~/FinalProject/
+bash-4.2$ git pull origin master
+remote: Enumerating objects: 5, done.[K
+remote: Counting objects:  20% (1/5)[Kremote: Counting objects:  40% (2/5)[Kremote: Counting objects:  60% (3/5)[Kremote: Counting objects:  80% (4/5)[Kremote: Counting objects: 100% (5/5)[Kremote: Counting objects: 100% (5/5), done.[K
+remote: Compressing objects:  50% (1/2)[Kremote: Compressing objects: 100% (2/2)[Kremote: Compressing objects: 100% (2/2), done.[K
+remote: Total 3 (delta 1), reused 3 (delta 1), pack-reused 0[K
+Unpacking objects:  33% (1/3)   Unpacking objects:  66% (2/3)   Unpacking objects: 100% (3/3)   Unpacking objects: 100% (3/3), done.
+From github.com:LivStanley/FinalProject
+ * branch            master     -> FETCH_HEAD
+Updating 2340c34..ffb7bd7
+Fast-forward
+ README.md | 1 [32m+[m
+ 1 file changed, 1 insertion(+)
+bash-4.2$ ##View edui[K[K[K[KCopy edit
+bash-4.2$ cat ER[K[KREADME.md 
+Final Project For BIFX 552
+Project started 12-01-2019
+TODO: ask sequencing center abt adapters
+This is a new edit
+This line was added from Copy
+bash-4.2$ ##View last two log entries
+bash-4.2$ git log -n 2
+[?1h=[33mcommit ffb7bd7745171322023791c608e45ff87a9097fd[m[m
+Author: LivStanley <ogs1@hood.edu>[m
+Date:   Tue Dec 3 13:39:37 2019 -0500[m
+[m
+    Added a line from Copy[m
+[m
+[33mcommit 2340c34e1cab06a80a728ec1ab710f3bc95bcd89[m[m
+Author: LivStanley <ogs1@hood.edu>[m
+Date:   Tue Dec 3 13:32:09 2019 -0500[m
+[m
+    added a line[m
+[K[?1l>bash-4.2$ exit
+exit
+
+Script done on Tue 03 Dec 2019 01:44:25 PM EST

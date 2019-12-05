@@ -1,0 +1,2238 @@
+Script started on Sun 01 Dec 2019 07:22:18 PM EST
+[?1034hbash-4.2$ ##Add[K[K[KConfigure username and email with [K[K[K[K[K[C[1@ [1@g[1@i[1@t[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+bash-4.2$ git config --global.user[K[K[K[K[K user.name "LivStanley"
+bash-4.2$ git on[K[Kconfig --global user.email "ogs1@hood.edu"
+bash-4.2$ ##Enable terminal colors
+bash-4.2$ git config --glon[Kbal color.ui true
+bash-4.2$ ##Initialize git repository for my final project
+bash-4.2$ ##Creat [Ke empty directory to serve as [C[1P[1P[1P[1P[1P[1@n[1@e[1@w[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kmd[Kkdir ~/BIFX552/FinalProject
+mkdir: cannot create directory ‘/home/ogs1/BIFX552/FinalProject’: No such file or directory
+bash-4.2$ mkdir ~/BIFX552/FinalProject[1P2/FinalProject[1P2/FinalProject[1P2/FinalProject[1P2/FinalProject[1P2/FinalProject[1P2/FinalProject[1P2/FinalProject[C[1P/FinalProject[C[C[C[C[C[C[C[C[C[C[C[C[C
+bash-4.2$ Initialize [K[K[K[K[K[K[K[K[K[K[K##[K[Kgit init ~/FinalProject/
+Initialized empty Git repository in /home/ogs1/FinalProject/.git/
+bash-4.2$ ##View hiddent git directory in [1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C i n i t i a l i z e d [C d i r e c t o r y 
+bash-4.2$ ls -a ~/FinalProject/
+.  ..  .git
+bash-4.2$ ##Copy Seqtk repo to [C[1P[1P[1P[1@l[1@o[1@n[1@e[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C\\\\\\\\\\[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[KTransfer to FinalProject directory
+bash-4.2$ cd ~/FinalProject/
+bash-4.2$ ##Make new directory for cloning and compiling tools
+bash-4.2$ mkdir ~/ [KcloneAndComile[K[K[Kpile[1PloneAndCompileCloneAndCompile[C[C[C[C[C[C[C[C[C[C[C[C[C[C/
+bash-4.2$ ##Set permissions so [K[K[Kto only myself
+bash-4.2$ chmod 700 ~/clone[K[K[K[K[KClone an[K[K[KAndComplie[K[K[Kile/
+bash-4.2$ ##transfer to be[K[KClone [KAndComplie[K[K[Kile
+bash-4.2$ cd ~/CloneAndCompile/
+bash-4.2$ ##Clone Seqtk repository
+bash-4.2$ git clone git://github.com/lh3j[K/seqtk.git
+Cloning into 'seqtk'...
+remote: Enumerating objects: 5, done.[K
+remote: Counting objects:  20% (1/5)[Kremote: Counting objects:  40% (2/5)[Kremote: Counting objects:  60% (3/5)[Kremote: Counting objects:  80% (4/5)[Kremote: Counting objects: 100% (5/5)[Kremote: Counting objects: 100% (5/5), done.[K
+remote: Compressing objects:  20% (1/5)[Kremote: Compressing objects:  40% (2/5)[Kremote: Compressing objects:  60% (3/5)[Kremote: Compressing objects:  80% (4/5)[Kremote: Compressing objects: 100% (5/5)[Kremote: Compressing objects: 100% (5/5), done.[K
+Receiving objects:   0% (1/344)   Receiving objects:   1% (4/344)   Receiving objects:   2% (7/344)   Receiving objects:   3% (11/344)   Receiving objects:   4% (14/344)   Receiving objects:   5% (18/344)   Receiving objects:   6% (21/344)   Receiving objects:   7% (25/344)   Receiving objects:   8% (28/344)   Receiving objects:   9% (31/344)   Receiving objects:  10% (35/344)   Receiving objects:  11% (38/344)   Receiving objects:  12% (42/344)   Receiving objects:  13% (45/344)   Receiving objects:  14% (49/344)   Receiving objects:  15% (52/344)   Receiving objects:  16% (56/344)   Receiving objects:  17% (59/344)   Receiving objects:  18% (62/344)   Receiving objects:  19% (66/344)   Receiving objects:  20% (69/344)   Receiving objects:  21% (73/344)   Receiving objects:  22% (76/344)   Receiving objects:  23% (80/344)   Receiving objects:  24% (83/344)   Receiving objects:  25% (86/344)   Receiving objects:  26% (90/344)   Receiving objects:  27% (93/344)   Receiving objects:  28% (97/344)   Receiving objects:  29% (100/344)   Receiving objects:  30% (104/344)   Receiving objects:  31% (107/344)   Receiving objects:  32% (111/344)   Receiving objects:  33% (114/344)   Receiving objects:  34% (117/344)   Receiving objects:  35% (121/344)   Receiving objects:  36% (124/344)   Receiving objects:  37% (128/344)   Receiving objects:  38% (131/344)   Receiving objects:  39% (135/344)   Receiving objects:  40% (138/344)   Receiving objects:  41% (142/344)   Receiving objects:  42% (145/344)   Receiving objects:  43% (148/344)   Receiving objects:  44% (152/344)   Receiving objects:  45% (155/344)   Receiving objects:  46% (159/344)   Receiving objects:  47% (162/344)   Receiving objects:  48% (166/344)   Receiving objects:  49% (169/344)   Receiving objects:  50% (172/344)   Receiving objects:  51% (176/344)   Receiving objects:  52% (179/344)   Receiving objects:  53% (183/344)   Receiving objects:  54% (186/344)   Receiving objects:  55% (190/344)   Receiving objects:  56% (193/344)   remote: Total 344 (delta 1), reused 2 (delta 0), pack-reused 339[K
+Receiving objects:  57% (197/344)   Receiving objects:  58% (200/344)   Receiving objects:  59% (203/344)   Receiving objects:  60% (207/344)   Receiving objects:  61% (210/344)   Receiving objects:  62% (214/344)   Receiving objects:  63% (217/344)   Receiving objects:  64% (221/344)   Receiving objects:  65% (224/344)   Receiving objects:  66% (228/344)   Receiving objects:  67% (231/344)   Receiving objects:  68% (234/344)   Receiving objects:  69% (238/344)   Receiving objects:  70% (241/344)   Receiving objects:  71% (245/344)   Receiving objects:  72% (248/344)   Receiving objects:  73% (252/344)   Receiving objects:  74% (255/344)   Receiving objects:  75% (258/344)   Receiving objects:  76% (262/344)   Receiving objects:  77% (265/344)   Receiving objects:  78% (269/344)   Receiving objects:  79% (272/344)   Receiving objects:  80% (276/344)   Receiving objects:  81% (279/344)   Receiving objects:  82% (283/344)   Receiving objects:  83% (286/344)   Receiving objects:  84% (289/344)   Receiving objects:  85% (293/344)   Receiving objects:  86% (296/344)   Receiving objects:  87% (300/344)   Receiving objects:  88% (303/344)   Receiving objects:  89% (307/344)   Receiving objects:  90% (310/344)   Receiving objects:  91% (314/344)   Receiving objects:  92% (317/344)   Receiving objects:  93% (320/344)   Receiving objects:  94% (324/344)   Receiving objects:  95% (327/344)   Receiving objects:  96% (331/344)   Receiving objects:  97% (334/344)   Receiving objects:  98% (338/344)   Receiving objects:  99% (341/344)   Receiving objects: 100% (344/344)   Receiving objects: 100% (344/344), 164.86 KiB | 0 bytes/s, done.
+Resolving deltas:   0% (0/196)   Resolving deltas:   2% (5/196)   Resolving deltas:   4% (9/196)   Resolving deltas:   5% (10/196)   Resolving deltas:   7% (15/196)   Resolving deltas:  17% (35/196)   Resolving deltas:  18% (37/196)   Resolving deltas:  23% (47/196)   Resolving deltas:  24% (48/196)   Resolving deltas:  27% (53/196)   Resolving deltas:  28% (55/196)   Resolving deltas:  31% (61/196)   Resolving deltas:  35% (70/196)   Resolving deltas:  54% (106/196)   Resolving deltas:  55% (109/196)   Resolving deltas:  61% (120/196)   Resolving deltas:  67% (133/196)   Resolving deltas:  75% (147/196)   Resolving deltas:  76% (150/196)   Resolving deltas:  77% (152/196)   Resolving deltas:  78% (153/196)   Resolving deltas:  89% (176/196)   Resolving deltas: 100% (196/196)   Resolving deltas: 100% (196/196), done.
+bash-4.2$ move[K[K[K[K##Move to se[K[KSeqtk direcotry[K[K[K[K[Kctory
+bash-4.2$ cd seqtk
+bash-4.2$ ##list [K[K[K[K[KView contents of seqtk
+bash-4.2$ ls seqtk
+ls: cannot access seqtk: No such file or directory
+bash-4.2$ ls
+khash.h  kseq.h  LICENSE  Makefile  README.md  seqtk.c
+bash-4.2$ exit
+exit
+
+Script done on Sun 01 Dec 2019 08:52:53 PM EST
+Script started on Sun 01 Dec 2019 09:45:34 PM EST
+[?1034hbash-4.2$ exit
+exit
+
+Script done on Sun 01 Dec 2019 09:46:13 PM EST
+Script started on Sun 01 Dec 2019 09:47:21 PM EST
+[?1034hbash-4.2$ cd `/[K[K~/FinalProject/
+bash-4.2$ ##Check the stat[K[K[K[K[K git status fo[K[Kof FinalProject
+bash-4.2$ git statys[K[Kus
+# On branch master
+#
+# Initial commit
+#
+nothing to commit (create/copy files and use "git add" to track)
+bash-4.2$ ##Track [K[K[K[K[K[KMake blank R[Kreadme files
+bash-4.2$ touch README.txt
+bash-4.2$ ##Make subdirectory a[Kdata
+bash-4.2$ mkdir data
+bash-4.2$ ##set[K[K[KSet data permissions[C[C[1P permissions[1P permissions[1P permissions[1P permissions[1Ppermissions[C[C[C[C[C[C[C[C[C[C[C[C
+bash-4.2$ chmod 755 data
+bash-4.2$ ##Set [K[K[K[KCreate p[Kreadme in d[K[K[K[K[K file in data
+bash-4.2$ touch data/READS[KME.txt
+bash-4.2$ ##us[K[KTell GI[K[Kgit to track readme[K[K[K[K[K[Kboth readme files. filest filesx filest files[C[C[C[C[C[C
+bash-4.2$ git add README data/README.txt. data/README.txtt data/README.txtx data/README.txtt data/README.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+bash-4.2$ ##List cond[Ktencts[K[K[Kts of FI[KinalProject
+bash-4.2$ ls
+data  README.txt
+bash-4.2$ git stat[K[K[K[K[K[K[K[K##Check the sat[K[K[Krepository status[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[KC[KVerify README files are being st[K[Ktracked
+bash-4.2$ git status
+# On branch master
+#
+# Initial commit
+#
+# Changes to be committed:
+#   (use "git rm --cached <file>..." to unstage)
+#
+#	[32mnew file:   README.txt[m
+#	[32mnew file:   data/README.txt[m
+#
+bash-4.2$ ##Edit Re[K[Kreadme file
+bash-4.2$ echo "Final Project For BIX[KFX 552" >>n[K README.txt
+bash-4.2$ ##Check status after d[Kediting
+bash-4.2$ git status
+# On branch master
+#
+# Initial commit
+#
+# Changes to be committed:
+#   (use "git rm --cached <file>..." to unstage)
+#
+#	[32mnew file:   README.txt[m
+#	[32mnew file:   data/README.txt[m
+#
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	[31mmodified:   README.txt[m
+#
+bash-4.2$ ##Stage new changes to readme
+bash-4.2$ git add README.txt
+bash-4.2$ ##Check status to verify staging
+bash-4.2$ git status
+# On branch master
+#
+# Initial commit
+#
+# Changes to be committed:
+#   (use "git rm --cached <file>..." to unstage)
+#
+#	[32mnew file:   README.txt[m
+#	[32mnew file:   data/README.txt[m
+#
+bash-4.2$ ##Commit staged files and changed[Ks with the messag[K[K[K[K[K[K[K[K[K[K[K[K[K[Kith a message ([K"initial commit[K[K[K[K[K[Kimport"
+bash-4.2$ git commit -m "initial import"
+[master (root-commit) 1c1f528] initial import
+ 2 files changed, 1 insertion(+)
+ create mode 100644 README.txt
+ create mode 100644 data/README.txt
+bash-4.2$ ##Change default text editor
+bash-4.2$ git config -- [Kglobal core.editor vim
+bash-4.2$ ##Shortcut to stage all tracked files' changes with -a for all and - for[K[K[K[Km for message
+bash-4.2$ git commit -a -m "Commit all staged files and changes"[C[C[C[C[C[C[C[C[C[C[C[1Pchanges"[1Phanges"[1Phanges"[1Phanges"[1Phanges"[1Phanges"[1Phanges"[1Phanges"[1Phanges"[1Phanges"[1Phanges"[1Phanges"[1Phanges"[1Phanges"[1Phanges"[1Phanges"[1Phanges"[1Phanges"[1Phanges"[1Phanges"[1Phanges"[1Phanges"[1Phanges"[1Phanges"[1Phanges"[1Phanges"[1Phanges"[1Phanges"[1Phanges"Ihanges"nhanges"changes"lhanges"uhanges"dhanges"ehanges"shanges" hanges"ahanges"lhanges"lhanges" hanges"changes"[C[C[C[C[C[C[C
+# On branch master
+nothing to commit, working directory clean
+bash-4.2$ ##Check there is nothing left to commit[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K staged[C[1@ [1@t[1@h[1@a[1@t[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+bash-4.2$ git status
+# On branch master
+nothing to commit, working directory clean
+bash-4.2$ ##edit README[K[K[K[K[K[Kreadme
+bash-4.2$ echo "Project started 12-[K[K[K2019[K[K[K[K12-01-2019" >>README.txt README.txt[C[C[C[C[C[C[C[C[C[C
+bash-4.2$ ##View difference between last commit and current version of file (only if currenct cha[K[K[K[K[K[Kt change has not been stages)[1P)d)[C
+bash-4.2$ git diff
+[?1h=[1mdiff --git a/README.txt b/README.txt[m[m
+[1mindex 3954973..9815542 100644[m[m
+[1m--- a/README.txt[m[m
+[1m+++ b/README.txt[m[m
+[36m@@ -1 +1,2 @@[m[m
+ Final Project For BIFX 552[m[m
+[32m+[m[32mProject started 12-01-2019[m[m
+[K[?1l>bash-4.2$ ##Stage readme edits[K
+bash-4.2$ git add README.txt 
+bash-4.2$ ##Check differences again
+bash-4.2$ git diff
+[?1h=[K[?1l>bash-4.2$ ##Check [K[K[K[K[K[KView differences between latest commit and currently staged file[C[1@ [1@t[1@h[1@e[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1@a[1@n[1@d[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+bash-4.2$ git diff --staged
+[?1h=[1mdiff --git a/README.txt b/README.txt[m[m
+[1mindex 3954973..9815542 100644[m[m
+[1m--- a/README.txt[m[m
+[1m+++ b/README.txt[m[m
+[36m@@ -1 +1,2 @@[m[m
+ Final Project For BIFX 552[m[m
+[32m+[m[32mProject started 12-01-2019[m[m
+[K[?1l>bash-4.2$ ##View chain of commits
+bash-4.2$ git log
+[?1h=[33mcommit 1c1f528e79ddc1275b3a54522316121e666e4ce3[m[m
+Author: LivStanley <ogs1@hood.edu>[m
+Date:   Sun Dec 1 22:50:04 2019 -0500[m
+[m
+    initial import[m
+[K[?1l>bash-4.2$ ##commit recent changes
+bash-4.2$ git commit -a -m "Added project start t[Kdate to README"
+[master 3226c88] Added project start date to README
+ 1 file changed, 1 insertion(+)
+bash-4.2$ ##View commit history again
+bash-4.2$ git log
+[?1h=[33mcommit 3226c88e12edd16c5aaeefd122335c2072ad258e[m[m
+Author: LivStanley <ogs1@hood.edu>[m
+Date:   Sun Dec 1 23:30:29 2019 -0500[m
+[m
+    Added project start date to README[m
+[m
+[33mcommit 1c1f528e79ddc1275b3a54522316121e666e4ce3[m[m
+Author: LivStanley <ogs1@hood.edu>[m
+Date:   Sun Dec 1 22:50:04 2019 -0500[m
+[m
+    initial import[m
+[K[?1l>bash-4.2$ ##Change RE[K[KREADME and RE[K[Kdata/README [C[1P[1P[1P[1P[1P[1P[1@A[1@d[1@d[C[1@ [1@.[1@m[1@d[C[1@ [1@e[1@x[1@t[1@e[1@n[1@s[1@i[1@o[1@n[C[1@ [1@t[1@o[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+bash-4.2$ git mv README.txt Re[KEADME.md
+bash-4.2$ git mv README.txt README.md[1@d[1@a[1@t[1@a[1@/[C[C[C[C[C[C[C[C[C[C[CdREADME.mdaREADME.mdtREADME.mdaREADME.md/README.md[C[C[C[C[C[C[C[C[C
+bash-4.2$ ##View changes to [K[K[K[K[K[K[K[K[K[K[K[K files in directory to check for md[K[K[K .md extension
+bash-4.2$ ls
+data  README.md
+bash-4.2$ ##C[KView [K[K[K[K[KCheck change[K[K[K[K[K[Kthat changes are stages and ready for commit
+bash-4.2$ k[Kgit status
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	[32mrenamed:    README.txt -> README.md[m
+#	[32mrenamed:    data/README.txt -> data/README.md[m
+#
+bash-4.2$ ##Commit chang[K[K[K[K[Kfile namechanges
+bash-4.2$ git commit -m "added markdown extensions to README files"
+[master cdd8717] added markdown extensions to README files
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ rename README.txt => README.md (100%)
+ rename data/{README.txt => README.md} (100%)
+bash-4.2$ exit
+exit
+
+Script done on Sun 01 Dec 2019 11:58:24 PM EST
+Script started on Mon 02 Dec 2019 03:44:05 PM EST
+[?1034hbash-4.2$ ##Generate empty FASTQ sequence files
+bash-4.2$ mkdir `[K[K[K[K[K[K[Kls
+bds-files  chap5.txt  CloneAndCompile  FinalProject  R	Rplots.pdf  test.pdf  zmays-snps
+bash-4.2$ cd FinalProject/
+bash-4.2$ mkdir [K[K[K[K[K[Kls
+data  README.md
+bash-4.2$ mkdir data/seqs/seq[K[K[Kseq[K[K[Kread{A..D}d[Kf[K_R[1Pd{A..D}_R[C[1P{A..D}_R[1P{A..D}_R[1P{A..D}_Rg{A..D}_Re{A..D}_Rn{A..D}_Re{A..D}_R[C[C[C[C[C[C[C[C{1,2}
+mkdir: cannot create directory ‘data/seqs/geneA_R1’: No such file or directory
+mkdir: cannot create directory ‘data/seqs/geneA_R2’: No such file or directory
+mkdir: cannot create directory ‘data/seqs/geneB_R1’: No such file or directory
+mkdir: cannot create directory ‘data/seqs/geneB_R2’: No such file or directory
+mkdir: cannot create directory ‘data/seqs/geneC_R1’: No such file or directory
+mkdir: cannot create directory ‘data/seqs/geneC_R2’: No such file or directory
+mkdir: cannot create directory ‘data/seqs/geneD_R1’: No such file or directory
+mkdir: cannot create directory ‘data/seqs/geneD_R2’: No such file or directory
+bash-4.2$ mkdir data/seqs/gene{A..D}_R{1,2}[C/ data/seqs/gene{A..D}_R{1,2}[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P data/seqs/gene{A..D}_R{1,2}[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/data/seqs/gene{A..D}_R{1,2}[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.fastq
+mkdir: cannot create directory ‘/data/seqs/geneA_R1.fastq’: No such file or directory
+mkdir: cannot create directory ‘/data/seqs/geneA_R2.fastq’: No such file or directory
+mkdir: cannot create directory ‘/data/seqs/geneB_R1.fastq’: No such file or directory
+mkdir: cannot create directory ‘/data/seqs/geneB_R2.fastq’: No such file or directory
+mkdir: cannot create directory ‘/data/seqs/geneC_R1.fastq’: No such file or directory
+mkdir: cannot create directory ‘/data/seqs/geneC_R2.fastq’: No such file or directory
+mkdir: cannot create directory ‘/data/seqs/geneD_R1.fastq’: No such file or directory
+mkdir: cannot create directory ‘/data/seqs/geneD_R2.fastq’: No such file or directory
+bash-4.2$ mkdir /data/seqs/gene{A..D}_R{1,2}.fastq[C[C /data/seqs/gene{A..D}_R{1,2}.fastq[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C- /data/seqs/gene{A..D}_R{1,2}.fastq[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C0 /data/seqs/gene{A..D}_R{1,2}.fastq[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P /data/seqs/gene{A..D}_R{1,2}.fastq[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cp /data/seqs/gene{A..D}_R{1,2}.fastq[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+mkdir: cannot create directory ‘/data’: Permission denied
+mkdir: cannot create directory ‘/data’: Permission denied
+mkdir: cannot create directory ‘/data’: Permission denied
+mkdir: cannot create directory ‘/data’: Permission denied
+mkdir: cannot create directory ‘/data’: Permission denied
+mkdir: cannot create directory ‘/data’: Permission denied
+mkdir: cannot create directory ‘/data’: Permission denied
+mkdir: cannot create directory ‘/data’: Permission denied
+bash-4.2$ mkdir -p /data/seqs/gene{A..D}_R{1,2}.fastq[1Pdata/seqs/gene{A..D}_R{1,2}.fastq[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+bash-4.2$ ##Check data[K[K[K[Kfi[K[Kfiles were generated
+bash-4.2$ ls
+data  README.md
+bash-4.2$ cd data
+bash-4.2$ ls
+README.md  seqs
+bash-4.2$ cd seqs
+bash-4.2$ ls
+geneA_R1.fastq	geneA_R2.fastq	geneB_R1.fastq	geneB_R2.fastq	geneC_R1.fastq	geneC_R2.fastq	geneD_R1.fastq	geneD_R2.fastq
+bash-4.2$ ##[K[Kexit
+exit
+
+Script done on Mon 02 Dec 2019 03:51:14 PM EST
+Script started on Mon 02 Dec 2019 09:14:43 PM EST
+[?1034hbash-4.2$ cd F[K[K[K[Kmove [K[K[K[K[K##Move to Final Project directory and add .gitignore file
+bash-4.2$ cd FinalProject/
+bash-4.2$ touch .gitignore
+bash-4.2$ ##Edit .gitignore to iuncl[K[K[K[K[Kif[Kgnore fastq files
+bash-4.2$ echo '[K"data/seqs/*.fastq" >> .gitignore
+bash-4.2$ ##CHec[K[K[Kheck git stat[K[K[K[Kstatus for .gitignore
+bash-4.2$ git status
+# On branch master
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	[31m.gitignore[m
+nothing added to commit but untracked files present (use "git add" to track)
+bash-4.2$ ##Stage the .gitignroe [K[K[K[K[Knore gile[K[K[K[Kfile
+bash-4.2$ git add .gitignore 
+bash-4.2$ ##check s[K[K[K[K[K[K[KCheck the staged[K[K[K[K[K[K[K[Kat .gitignore file is stat[Kged
+bash-4.2$ git status
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	[32mnew file:   .gitignore[m
+#
+bash-4.2$ ##Commit .gitignore
+bash-4.2$ git commiat[K[Kt -m "Added .gitignore"
+[master ed29619] Added .gitignore
+ 1 file changed, 1 insertion(+)
+ create mode 100644 .gitignore
+bash-4.2$ ##Creat a [K[K[Ke a globas[Kl g[K.gitignore file
+bash-4.2$ touch [K[K[K[K[K[Ktouch ~/.gitignore_global
+bash-4.2$ ##Configure .gitignore [K_global
+bash-4.2$ git config -- global core.excludesfile ~/.gitignore_global 
+error: key does not contain a section: global
+bash-4.2$ git config -- global core.excludesfile ~/.gitignore_global [1P[C[C[C[C[C[C[C[C[C[C[29P##Configure .gitignore_global[C[C[C[C[C[C[C[C[C[C[4Ptouch ~/.gitignore_global[C[C[C[C[C[C[C[C[C[C##Configure .gitignore_global[C[C[C[C[C[C[C[C[C[Cgit config --global core.excludesfile ~/.gitignore_global [C[C[C[C[C[C[C[C[C[C[Kgit config --global core.excludesfile ~/.gitignore_global [K
+bash-4.2$ ##Unstage a messy[K[K[K[K[Kfie[Kle you do [K[K[K[K[K[K[Kyou do not want to commit yet
+bash-4.2$ echo "TODO: ask sequencing center abt adapters" >> README.md 
+bash-4.2$ git add README.md 
+bash-4.2$ git status
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	[32mmodified:   README.md[m
+#
+bash-4.2$ git reset HEAD README.md 
+Unstaged changes after reset:
+M	README.md
+bash-4.2$ ##Check reset was successful
+bash-4.2$ c[Kgitstatus[K[K[K[K[K[K status
+# On branch master
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	[31mmodified:   README.md[m
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+bash-4.2$ ##Gptp [K[K[K[Ko to github.com and [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kenerate a public/private ssh key[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Km[Kn s[KSSH kep[Ky pair
+bash-4.2$ ssh-keygen -b 2048
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/ogs1/.ssh/id_rsa): 
+/home/ogs1/.ssh/id_rsa already exists.
+Overwrite (y/n)? y
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /home/ogs1/.ssh/id_rsa.
+Your public key has been saved in /home/ogs1/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:ROaCGCGo0bmnJ4ufn4oedQxxGwNjXJoxXEQ6JTD5yMw ogs1@slurm1.hood.edu
+The key's randomart image is:
++---[RSA 2048]----+
+|o+B@*X  o        |
+|oo==%.++         |
+|=.+B... o        |
+|.E..=  o         |
+|   + o  S        |
+|  + o            |
+| o +             |
+|..o. .           |
+|oo+oo            |
++----[SHA256]-----+
+bash-4.2$ #C[K#Change to .ssh k[Kdirectory[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kssh
+usage: ssh [-1246AaCfGgKkMNnqsTtVvXxYy] [-b bind_address] [-c cipher_spec]
+           [-D [bind_address:]port] [-E log_file] [-e escape_char]
+           [-F configfile] [-I pkcs11] [-i identity_file]
+           [-J [user@]host[:port]] [-L address] [-l login_name] [-m mac_spec]
+           [-O ctl_cmd] [-o option] [-p port] [-Q query_option] [-R address]
+           [-S ctl_path] [-W host:port] [-w local_tun[:remote_tun]]
+           [user@]hostname [command]
+bash-4.2$ ##Change to .ssh direcot[K[Ktory
+bash-4.2$ cd ~/.ssh
+bash-4.2$ ##Append contents of public key to authorized keys files[K
+bash-4.2$ cat id_rsa.pub[C id_rsa.pub~ id_rsa.pub[C\id_rsa.pub[1Pid_rsa.pub[1Pid_rsa.pub/id_rsa.pub.id_rsa.pubsid_rsa.pubsid_rsa.pubhid_rsa.pub/id_rsa.pub[Cid_rsa.pubdid_rsa.pub[1Pid_rsa.pub[1Pd_rsa.pub[C[C[C[C[C[C[C[C[C[C >> ~/.ssh/authorized[K[K[K[K[K[K[K[K[K[KAuthori[K[K[K[K[K[K[Kauthorized_keys
+bash-4.2$ ##Start ssh [K-agem[Knt
+bash-4.2$ eval$(ssh-agent -s)[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Agent pid 4432
+bash-4.2$ ssh-[K[K[K[K##Add your private key to the ssh agent
+bash-4.2$ ssh-add ~/.ssh/id_rsa
+Identity added: /home/ogs1/.ssh/id_rsa (/home/ogs1/.ssh/id_rsa)
+bash-4.2$ exit
+exit
+
+Script done on Mon 02 Dec 2019 11:29:19 PM EST
+Script started on Tue 03 Dec 2019 12:08:02 PM EST
+[?1034hbash-4.2$ ##Add public key to github buy[K[Ky copy and paste[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K by copy and paste
+bash-4.2$ clip < ~/.ssh/id_rsa_pub[K[K[K[K.pub
+bash: clip: command not found
+bash-4.2$ ls
+bds-files  chap5.txt  CloneAndCompile  FinalProject  R	Rplots.pdf  test.pdf  zmays-snps
+bash-4.2$ cd F[K~/.ssh/id_rsa.pub 
+bash: cd: /home/ogs1/.ssh/id_rsa.pub: Not a directory
+bash-4.2$ cat ~[K[K[K[K[Kcd ~/.ssh/id_rsa.pub [1P[1P[1@c[1@a[1@t[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCvX6pQ4ZXEg3Zc7yy1cZV2QPNs3A7qp+9h+RalYeFStrsJ24Dt/tdgmEvokOLPdBcL2A71E5ooALzDq/nxTJirGt7ezsjc7CrrZ6GdWsbq/EUggqB2rcLQmRDJWDxjwxsyP1J6IFtgQs5x8lv3EoMPZtsulfjNj3UOY1F4gOtXt079f+NyVuQdz7wjq3xON2LrCkrWybsMzGugzt+5ZGWS87XlFFnK4wjq7oO48vU18Nhqj4z+KsWZCgpvGJK9nenBTTNCbQyjWt2pwwCm9x1npbmy/Gfe75tPELv+7qK9mzneYIfvp9FVnQHXkCdwZdMfV6wclTCuLmy6HxgGegW3 ogs1@slurm1.hood.edu
+bash-4.2$ ^C
+bash-4.2$ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCvX6pQ4ZXEg3Zc7yy1cZV2QPNs3A7qp+9h+RalYeFStrsJ24Dt/tdgmEvokOLPdBcL2A71E5ooALzDq/nxTJirGt7ezsjc7CrrZ6GdW sbq/EUggqB2rcLQmRDJWDxjwxsyP1J6IFtgQs5x8lv3EoMPZtsulfjNj3UOY1F4gOtXt079f+NyVuQdz7wjq3xON2LrCkrWybsMzGugzt+5ZGWS87XlFFnK4wjq7oO48vU18Nhqj4z+KsWZCgpvGJK9 nenBTTNCbQyjWt2pwwCm9x1npbmy/Gfe75tPELv+7qK9mzneYIfvp9FVnQHXkCdwZdMfV6wclTCuLmy6HxgGegW3 ogs1@slurm1.hood.edu
+bash: ssh-rsa: command not found
+bash-4.2$ ##Check [K[K[K[K[K[KVerify ssh with github[C[1@ [1@k[1@e[1@y[C[C[C[C[C[C[C[C[C[C[C[C
+bash-4.2$ ssh -T git@github.com
+Warning: Permanently added the RSA host key for IP address '140.82.113.3' to the list of known hosts.
+Hi LivStanley! You've successfully authenticated, but GitHub does not provide shell access.
+bash-4.2$ ##Configure log[Kcal repository to [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[KFinalProject to Github repository[C[1@ [1@l[1@o[1@c[1@a[1@l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@ [1@r[1@e[1@o[1@p[1P[1P[1@p[1@o[1@s[1@i[1@t[1@o[1@r[1@y[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+bash-4.2$ git remote add origin git@github.comLivStanley:LivStanley[C[C[C[C[C[C[C[C[C[C/FinalProject.git
+fatal: Not a git repository (or any parent up to mount point /home)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+bash-4.2$ ls
+bds-files  chap5.txt  CloneAndCompile  FinalProject  R	Rplots.pdf  test.pdf  zmays-snps
+bash-4.2$ cd FinalProject/
+bash-4.2$ cd FinalProject/[C[C[C[C[C[C[C[C[C[Cls[Kgit remote add origin git@github.com:LivStanley/FinalProject.git
+bash-4.2$ ##Check that local git knows about remote k[Kgit
+bash-4.2$ git remote -v
+origin	git@github.com:LivStanley/FinalProject.git (fetch)
+origin	git@github.com:LivStanley/FinalProject.git (push)
+bash-4.2$ ##Push initial commits from Finap[KlProject to remote reom[K[Kpository
+bash-4.2$ git push origin master
+Warning: Permanently added the RSA host key for IP address '140.82.114.3' to the list of known hosts.
+ERROR: Repository not found.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+bash-4.2$ pwd
+/home/ogs1/FinalProject
+bash-4.2$ git remote -v
+origin	git@github.com:LivStanley/FinalProject.git (fetch)
+origin	git@github.com:LivStanley/FinalProject.git (push)
+bash-4.2$ git push origin master
+Warning: Permanently added the RSA host key for IP address '140.82.113.4' to the list of known hosts.
+ERROR: Repository not found.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+bash-4.2$ srun pt[K[K--pty bash
+[?1034hbash-4.2$ script -a chap5.txt [C[C[C[C[C[C[C[C[C[Cls[Kcd ../\ls[Kcd ../seqs\data\FinalProject[C[C[C[C[C[C[C[C[C[C[C[C[CFinalProject/data/seqs/[C[C[C[C[C[C[C[C[C[Cls[Kcd FinalProject/data/seqs/[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pseqs\data\FinalProject[C[C[C[C[C[C[C[C[C[C[C[C[C../[K[4Plscd ../\ls[Kscript -a chap5.txt [C[C[C[C[C[C[C[C[C[C[Kgit remote -v
+origin	git@github.com:LivStanley/FinalProject.git (fetch)
+origin	git@github.com:LivStanley/FinalProject.git (push)
+bash-4.2$ git push origin master
+No user exists for uid 10022
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+bash-4.2$ ssh -T git@github.com
+No user exists for uid 10022
+bash-4.2$ git remote -v
+origin	git@github.com:LivStanley/FinalProject.git (fetch)
+origin	git@github.com:LivStanley/FinalProject.git (push)
+bash-4.2$ logout
+bash: logout: not login shell: use `exit'
+bash-4.2$ git ocnfig[K[K[K[K[K[Kconfig --global user.name "LivST[Ktanley"
+bash-4.2$ git congig --global user.email "ogs1@hood.edu"
+git: 'congig' is not a git command. See 'git --help'.
+
+Did you mean this?
+	config
+bash-4.2$ git congig --global user.email "ogs1@hood.edu"[1P[1@f
+bash-4.2$ ssh -T git@github.com
+No user exists for uid 10022
+bash-4.2$ ssh -T git#[K@github.,[K[K.com
+No user exists for uid 10022
+bash-4.2$ scp --pty bash
+unknown option -- -
+usage: scp [-12346BCpqrv] [-c cipher] [-F ssh_config] [-i identity_file]
+           [-l limit] [-o ssh_option] [-P port] [-S program]
+           [[user@]host1:]file1 ... [[user@]host2:]file2
+bash-4.2$ git status
+# On branch master
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	[31mmodified:   README.md[m
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+bash-4.2$ exit
+exit
+bash-4.2$ [Kbash-4.2$ git remote -v[KV[K
+error: Unknown subcommand: -
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags|--no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | -d | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+bash-4.2$ git remote -v
+origin	git@github.com:LivStanley/FinalProject.git (fetch)
+origin	git@github.com:LivStanley/FinalProject.git (push)
+bash-4.2$ ##Create Final [KProject re[K[Kpublic p[Krepository on github.com
+bash-4.2$ ##push commits to public repository
+bash-4.2$ git push origin master
+Counting objects: 14, done.
+Delta compression using up to 16 threads.
+Compressing objects:  11% (1/9)   Compressing objects:  22% (2/9)   Compressing objects:  33% (3/9)   Compressing objects:  44% (4/9)   Compressing objects:  55% (5/9)   Compressing objects:  66% (6/9)   Compressing objects:  77% (7/9)   Compressing objects:  88% (8/9)   Compressing objects: 100% (9/9)   Compressing objects: 100% (9/9), done.
+Writing objects:   7% (1/14)   Writing objects:  14% (2/14)   Writing objects:  21% (3/14)   Writing objects:  28% (4/14)   Writing objects:  35% (5/14)   Writing objects:  42% (6/14)   Writing objects:  50% (7/14)   Writing objects:  57% (8/14)   Writing objects:  64% (9/14)   Writing objects:  71% (10/14)   Writing objects:  78% (11/14)   Writing objects:  85% (12/14)   Writing objects:  92% (13/14)   Writing objects: 100% (14/14)   Writing objects: 100% (14/14), 1.21 KiB | 0 bytes/s, done.
+Total 14 (delta 0), reused 0 (delta 0)
+To git@github.com:LivStanley/FinalProject.git
+ * [new branch]      master -> master
+bash-4.2$ ##Pulling Commits with git pul;[Kl
+bash-4.2$ ##Clone to separate [K[K[K[K[K[K[K[K[K[K differen 'collaborators'[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kt repository for collab [Korator exampble[K[K[Kle
+bash-4.2$ git [K[K[K[Kscript -a chap5.q[Ktxt
+Script started, file is chap5.txt
+[?1034hbash-4.2$ history
+    1  srun --pty R
+    2  srun --pty bash
+    3  srun --pty 
+    4  srun --pty bash
+    5  cd samtools-1.x
+    6  ls
+    7  cd ./
+    8  ls
+    9  cd cd \samtools-1.x
+   10  ls
+   11  cd ~
+   12  ls
+   13  man samtools
+   14  samtools view -H celegans.sam
+   15  https://github.com/vsbuffalo/bds-files.g
+   16  git clone git@github.com:vsbuffalo/bds-files.git
+   17  ssh-keygen -t rsa -b 4096 -C ogs1@hood.edu
+   18  ls -al ~/.ssh
+   19  clip < ~/.ssh/id_rsa.pub
+   20  man clip
+   21  srun --pty bash
+   22  ls
+   23  cd bds-files/
+   24  ls
+   25  scp --pty 
+   26  man samtools
+   27  man hmmer
+   28  srun --pty bash
+   29  R
+   30  ls
+   31  cd R
+   32  ls
+   33  cd x86_64-redhat-linux-gnu-library
+   34  ls
+   35  cd 3.6
+   36  ls
+   37  cd BiocManager
+   38  ls
+   39  view help
+   40  ls
+   41  R
+   42  ls
+   43  cd R
+   44  ls
+   45  cd x86_64-redhat-linux-gnu-library/
+   46  ls
+   47  cd 3.6
+   48  ls
+   49  cd BiocManager
+   50  ls
+   51  DESCRIPTION
+   52  cd DESCRIPTION
+   53  read DESCRIPTION 
+   54  R
+   55  ls
+   56  cd ./
+   57  ls
+   58  cd ../
+   59  ls
+   60  cd ../
+   61  ls
+   62  cd ../ | ls
+   63  cd ../
+   64  ls
+   65  man ls
+   66  cd ../
+   67  ls
+   68  cd ../
+   69  ls
+   70  cd ogs1
+   71  ls
+   72  cd bds-files/
+   73  ls
+   74  cd chapter-09-working-with-range-data/
+   75  ls
+   76  cd ../
+   77  ls
+   78  cd ../
+   79  ls
+   80  cd R
+   81  ls
+   82  library(BiocManager)
+   83  R
+   84  ls
+   85  cd x86_64-redhat-linux-gnu-library/
+   86  ls
+   87  cd 3.6
+   88  ls
+   89  cd BiocManager
+   90  ls
+   91  cd ../
+   92  cd BiocVersion
+   93  ls
+   94  cd INDEX
+   95  cd Meta
+   96  ls
+   97  cd package.rds
+   98  head package.rds
+   99  ls
+  100  cd ../
+  101  ls
+  102  cd ../
+  103  ls
+  104  R
+  105  ls
+  106  R
+  107  q
+  108  R
+  109  ls
+  110  cd R
+  111  ls
+  112  cd x86_64-redhat-linux-gnu-library/
+  113  ls
+  114  cd 3.6
+  115  ls
+  116  R
+  117  ls
+  118  R
+  119  samtools --version
+  120  samtools version
+  121  samtools -version
+  122  apt-show-versions samtools
+  123  dpkg -s samtools
+  124  ls
+  125  cd ../
+  126  ls
+  127  cd ogs1
+  128  ls
+  129  man samtools
+  130  head -n celegans.sam
+  131  head -n 10 celegans.sam
+  132  ls
+  133  cd bds-files/chapter-11-alignment/
+  134  head -n 10 celegans.sam
+  135  sametools view -H celegans.sam
+  136  samtools view -H celegans.sam
+  137  samtools view -h celegans.sam
+  138  samtools view -hS celegans.sam
+  139  CA      22222222222222222222222222222222222222222222222222      NM:i:0  MD:Z:50 AS:i:50 XS:i:19 RG:Z:VB00023_L001
+  140  V_2312838_2313331_4:0:0_0:0:0_e0b4      163     V       2312838 60      50M     =       2313282 494     CTTTGCGTAAGATGCATGATGCAATATTCTGAAAAATTAATATTTGTATT      22222222222222222222222222222222222222222222222222      NM:i:4  MD:Z:11T3T18T0T14       AS:i:30 XS:i:19 RG:Z:VB00023_L001
+  141  V_5070839_5071337_2:0:0_0:0:0_e6db      83      V       5071288 60      50M     =       5070839 -499    AAGAAGAAAAAGGAAGAACTACATTCAATTGATTTTTTGAAAAATGATTT      22222222222222222222222222222222222222222222222222      NM:i:0  MD:Z:50 AS:i:50 XS:i:22 RG:Z:VB00023_L001
+  142  V_5070839_5071337_2:0:0_0:0:0_e6db      163     V       5070839 60      50M     =       5071288 499     ATGTTGAAATTCTGAGAAAAATGTTGTATGAAACAATGGAGAAAAAGTGC      22222222222222222222222222222222222222222222222222      NM:i:2  MD:Z:15C16T17   AS:i:40 XS:i:20 RG:Z:VB00023_L001
+  143  V_6722310_6722779_2:0:0_1:0:0_fa53      99      V       6722310 60      50M     =       6722730 470     TAATCGCGGTAATAACTGATACATTGAAAAAATTTGAAATCAGGGAAAAT      22222222222222222222222222222222222222222222222222      NM:i:2  MD:Z:18T6C24    AS:i:40 XS:i:19 RG:Z:VB00023_L001
+  144  V_6722310_6722779_2:0:0_1:0:0_fa53      147     V       6722730 60      50M     =       6722310 -470    AGGTTGCATATATCTTTGTTGTTGTGCTTCATTTCCTTTTTTAGAGAAGG      22222222222222222222222222222222222222222222222222      NM:i:1  MD:Z:17T32      AS:i:45 XS:i:19 RG:Z:VB00023_L001
+  145  V_3824542_3824966_1:0:0_0:0:0_11491     83      V       3824917 60      50M     =       3824542 -425    CCTTTTTGGATTTAACAAAAAACTTGGCATGACGAGACCGTATATATAGC      22222222222222222222222222222222222222222222222222      NM:i:0  MD:Z:50 AS:i:50 XS:i:0  RG:Z:VB00023_L001
+  146  V_3824542_3824966_1:0:0_0:0:0_11491     163     V       3824542 60      50M     =       3824917 425     TTAACAAAAGCGCTGAGAAATAGGAGTGCTAAAATTTTTTGGAGTAGTGG      22222222222222222222222222222222222222222222222222      NM:i:1  MD:Z:45T4       AS:i:45 XS:i:0  RG:Z:VB00023_L001
+  147  V_11402405_11402844_2:0:0_0:0:0_114dd   99      V       11402405        60      50M     =       11402795        440     CACCCGCTGTACAGCATTATGATCCTCATTGAACCTGATGCAAGTGTGAT      22222222222222222222222222222222222222222222222222      NM:i:2  MD:Z:3A14T31    AS:i:41 XS:i:0  RG:Z:VB00023_L001
+  148  V_11402405_11402844_2:0:0_0:0:0_114dd   147     V       11402795        60      50M     =       11402405        -440    TTTTTCATATAAAACTACAATATTTTTCATGTGTCATAACGCCAGAAGGA      22222222222222222222222222222222222222222222222222      NM:i:0  MD:Z:50 AS:i:50 XS:i:0  RG:Z:VB00023_L001
+  149  V_13234024_13234619_1:0:0_0:0:0_11b1d   83      V       13234570        60      50M     =       13234024        -596    AACATGTTTGCCAATTACTTGGCTGGCGAAAACATTTCAGCCAGAAAAAA      22222222222222222222222222222222222222222222222222      NM:i:0  MD:Z:50 AS:i:50 XS:i:0  RG:Z:VB00023_L001
+  150  V_13234024_13234619_1:0:0_0:0:0_11b1d   163     V       13234024        60      50M     =       13234570        596     AGAAACAGCATCCGAGTTAATTTGTGATCAGATATGCAACATAATTTTTT      22222222222222222222222222222222222222222222222222      NM:i:1  MD:Z:6T43       AS:i:45 XS:i:0  RG:Z:VB00023_L001
+  151  tee -a chapter11
+  152  man tee
+  153  tee chapter_11_exercises
+  154  cd bds-files/chapter-11-alignment/
+  155  samtools view -hS celegans.sam 
+  156  samtools view -HS celegans.sam 
+  157  samtools view -H celegans.bam
+  158  samtools view -H celegans.bam | grep "^@RG"
+  159  samtools view -S celegans.sam| head -n 1
+  160  samtools view -S celegans.sam| tr '\t' '\n' | head -n 11
+  161  samtools flags
+  162  flags
+  163  man samtools flags
+  164  samtools flags
+  165  samtools Flags
+  166  samtools flags 147
+  167  R
+  168  ls
+  169  R
+  170  srun --pty R
+  171  $ samtools view -b celegans.sam > celegans_copy.bam
+  172  samtools
+  173  $ samtools view -b celegans.sam > celegans_copy.bam
+  174  samtools view
+  175  $ samtools view -bS celegans.sam > celegans_copy.bam
+  176  samtools view -Sh celegans.sam
+  177  ls
+  178  cd bds-files/chapter-11-alignment/
+  179  samtools view -Sh celegans.sam
+  180  $ samtools view -bS celegans.sam > celegans_copy.bam
+  181  samtools view -h celegans_copy.bam
+  182  cd ../
+  183  ls
+  184  cd ../
+  185  ls
+  186  rm celegans_copy.bam
+  187  rm chapter11
+  188  rm chapter_11_exercises 
+  189  rm Chapter_9 
+  190  ls
+  191  cd bds-files
+  192  cd chapter-11-alignment/
+  193  samtools view -H celegans.bam
+  194  samtools view -HS celegans.sam
+  195  samtools view -b celegans.sam > celegans_copy.bam
+  196  samtools view -bS celegans.sam > celegans_copy.bam
+  197  man samtools
+  198  man echo
+  199  man bc
+  200  pip install pysam
+  201  pysam
+  202  import pysam
+  203  man pysam
+  204  ##Configure git username and email 
+  205  git config --global user.name "LivStanley"
+  206  git config --global user.email "ogs1@hood.edu"
+  207  ##Enable terminal colors
+  208  git config --global color.ui true
+  209  ##Initialize git repository for my final project
+  210  mkdir ~/BIFX552/FinalProject
+  211  mkdir ~/FinalProject
+  212  git init ~/FinalProject/
+  213  ##View hidden git directory in initialized directory 
+  214  ls -a ~/FinalProject/
+  215  ##Transfer to FinalProject directory
+  216  cd ~/FinalProject/
+  217  ##Make new directory for cloning and compiling tools
+  218  mkdir ~/CloneAndCompile/
+  219  ##Set permissions to only myself
+  220  chmod 700 ~/CloneAndCompile/
+  221  ##transfer to CloneAndCompile
+  222  cd ~/CloneAndCompile/
+  223  ##Clone Seqtk repository
+  224  git clone git://github.com/lh3/seqtk.git
+  225  ##Move to Seqtk directory
+  226  cd seqtk
+  227  ##View contents of seqtk
+  228  ls seqtk
+  229  ls
+  230  exit
+  231  man script
+  232  script chap5.txt
+  233  exit
+  234  cd ~/FinalProject/
+  235  ##Check the git status of FinalProject
+  236  git status
+  237  ##Make blank readme files
+  238  touch README.txt
+  239  ##Make subdirectory data
+  240  mkdir data
+  241  ##Set permissions
+  242  chmod 755 data
+  243  ##Create readme file in data
+  244  touch data/README.txt
+  245  ##Tell git to track both readme.txt files
+  246  git add README.txt data/README.txt
+  247  ##List contents of FinalProject
+  248  ls
+  249  ##Verify README files are being tracked
+  250  git status
+  251  ##Edit readme file
+  252  echo "Final Project For BIFX 552" >> README.txt
+  253  ##Check status after editing
+  254  git status
+  255  ##Stage new changes to readme
+  256  git add README.txt
+  257  ##Check status to verify staging
+  258  git status
+  259  ##Commit staged files and changes with a message "initial import"
+  260  git commit -m "initial import"
+  261  ##Change default text editor
+  262  git config --global core.editor vim
+  263  ##Shortcut to stage all tracked files' changes with -a for all and -m for message
+  264  git commit -a -m "Includes all changes"
+  265  ##Check that there is nothing staged
+  266  git status
+  267  ##edit readme
+  268  echo "Project started 12-01-2019" >> README.txt
+  269  ##View difference between last commit and current version of file (only if current change has not been staged)
+  270  git diff
+  271  ##Stage readme edit
+  272  git add README.txt 
+  273  ##Check differences again
+  274  git diff
+  275  ##View differences between the latest commit and currently staged file
+  276  git diff --staged
+  277  ##View chain of commits
+  278  git log
+  279  ##commit recent changes
+  280  git commit -a -m "Added project start date to README"
+  281  ##View commit history again
+  282  git log
+  283  ##Add .md extension to README and data/README 
+  284  git mv README.txt README.md
+  285  git mv data/README.txt data/README.md
+  286  ##View files in directory to check for .md extension
+  287  ls
+  288  ##Check that changes are stages and ready for commit
+  289  git status
+  290  ##Commit file namechanges
+  291  git commit -m "added markdown extensions to README files"
+  292  exit
+  293  ls
+  294  script -a chap5.txt 
+  295  history
+  296  script -a chap5.txt
+  297  ##Generate empty FASTQ sequence files
+  298  ls
+  299  cd FinalProject/
+  300  ls
+  301  mkdir data/seqs/gene{A..D}_R{1,2}
+  302  mkdir /data/seqs/gene{A..D}_R{1,2}.fastq
+  303  mkdir -p /data/seqs/gene{A..D}_R{1,2}.fastq
+  304  mkdir -p data/seqs/gene{A..D}_R{1,2}.fastq
+  305  ##Check files were generated
+  306  ls
+  307  cd data
+  308  ls
+  309  cd seqs
+  310  ls
+  311  exit
+  312  script -a chap5.txt 
+  313  ##Move to Final Project directory and add .gitignore file
+  314  cd FinalProject/
+  315  touch .gitignore
+  316  ##Edit .gitignore to ignore fastq files
+  317  echo "data/seqs/*.fastq" >> .gitignore
+  318  ##Check git status for .gitignore
+  319  git status
+  320  ##Stage the .gitignore file
+  321  git add .gitignore 
+  322  ##Check that .gitignore file is staged
+  323  git status
+  324  ##Commit .gitignore
+  325  git commit -m "Added .gitignore"
+  326  ##Create a global .gitignore file
+  327  touch ~/.gitignore_global
+  328  ##Configure .gitignore_global
+  329  git config -- global core.excludesfile ~/.gitignore_global 
+  330  git config --global core.excludesfile ~/.gitignore_global
+  331  ##Unstage a file you do not want to commit yet
+  332  echo "TODO: ask sequencing center abt adapters" >> README.md 
+  333  git add README.md 
+  334  git status
+  335  git reset HEAD README.md 
+  336  ##Check reset was successful
+  337  git status
+  338  ##Generate an SSH key pair
+  339  ssh-keygen -b 2048
+  340  ssh
+  341  ##Change to .ssh directory
+  342  cd ~/.ssh
+  343  ##Append contents of public key to authorized keys file
+  344  cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+  345  ##Start ssh-agent
+  346  eval $(ssh-agent -s)
+  347  ##Add your private key to the ssh agent
+  348  ssh-add ~/.ssh/id_rsa
+  349  exit
+  350  ls
+  351  cd FinalProject/data/seqs/
+  352  cd seqs\data\FinalProject
+  353  cd ../
+  354  ls
+  355  cd ../\
+  356  ls
+  357  script -a chap5.txt 
+  358  git remote -v
+  359  git push origin master
+  360  ssh -T git@github.com
+  361  git remote -v
+  362  logout
+  363  git config --global user.name "LivStanley"
+  364  git congig --global user.email "ogs1@hood.edu"
+  365  git config --global user.email "ogs1@hood.edu"
+  366  ssh -T git@github.com
+  367  scp --pty bash
+  368  git status
+  369  exit
+  370  history
+bash-4.2$ bash-4.2$ ##Create FinalProject public repository on github.com
+bash: bash-4.2$: command not found
+bash-4.2$ bash-4.2$ ##push commits to public repository[1P[1P[1P[1P[1P[1P[1P[1P[1P[C[1P
+bash-4.2$  git push origin master[C[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Warning: Permanently added the RSA host key for IP address '140.82.114.4' to the list of known hosts.
+Everything up-to-date
+bash-4.2$ Clone [K[K[K[K[K[K##Clone public repositlry [K[K[K[K[Ktory to different direct[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kc[KClone [Kan[K[KAnd [KCompile
+bash-4.2$ [Kbash-4.2$ cd ~/CloneAndCompile/
+bash-4.2$ mkdir FinalProject_Copy
+bash-4.2$ chmod 755 FinalProject_Copy/
+bash-4.2$ git clone git@github.com>L[K[K:LivStanley/FinalProject FinalProject_copy/[1Popy/Copy/[C[C[C[C
+Cloning into 'FinalProject_Copy'...
+remote: Enumerating objects: 14, done.[K
+remote: Counting objects:   7% (1/14)[Kremote: Counting objects:  14% (2/14)[Kremote: Counting objects:  21% (3/14)[Kremote: Counting objects:  28% (4/14)[Kremote: Counting objects:  35% (5/14)[Kremote: Counting objects:  42% (6/14)[Kremote: Counting objects:  50% (7/14)[Kremote: Counting objects:  57% (8/14)[Kremote: Counting objects:  64% (9/14)[Kremote: Counting objects:  71% (10/14)[Kremote: Counting objects:  78% (11/14)[Kremote: Counting objects:  85% (12/14)[Kremote: Counting objects:  92% (13/14)[Kremote: Counting objects: 100% (14/14)[Kremote: Counting objects: 100% (14/14), done.[K
+remote: Compressing objects:  11% (1/9)[Kremote: Compressing objects:  22% (2/9)[Kremote: Compressing objects:  33% (3/9)[Kremote: Compressing objects:  44% (4/9)[Kremote: Compressing objects:  55% (5/9)[Kremote: Compressing objects:  66% (6/9)[Kremote: Compressing objects:  77% (7/9)[Kremote: Compressing objects:  88% (8/9)[Kremote: Compressing objects: 100% (9/9)[Kremote: Compressing objects: 100% (9/9), done.[K
+remote: Total 14 (delta 0), reused 14 (delta 0), pack-reused 0[K
+Receiving objects:   7% (1/14)   Receiving objects:  14% (2/14)   Receiving objects:  21% (3/14)   Receiving objects:  28% (4/14)   Receiving objects:  35% (5/14)   Receiving objects:  42% (6/14)   Receiving objects:  50% (7/14)   Receiving objects:  57% (8/14)   Receiving objects:  64% (9/14)   Receiving objects:  71% (10/14)   Receiving objects:  78% (11/14)   Receiving objects:  85% (12/14)   Receiving objects:  92% (13/14)   Receiving objects: 100% (14/14)   Receiving objects: 100% (14/14), done.
+bash-4.2$ ##Verify both repositories have the same commits
+bash-4.2$ git log
+fatal: Not a git repository (or any parent up to mount point /home)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+bash-4.2$ cd Final_pr[K[KO[KP[K[K[K[K[K[K[K/FinalProject_Copy[1PFinalProject_Copy[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/
+bash-4.2$ git log
+[?1h=[33mcommit ed296198d245e94800a9cd99b976a8446653e34e[m[m
+Author: LivStanley <ogs1@hood.edu>[m
+Date:   Mon Dec 2 21:21:47 2019 -0500[m
+[m
+    Added .gitignore[m
+[m
+[33mcommit cdd871779820953e786d56c45a2925840671ca2b[m[m
+Author: LivStanley <ogs1@hood.edu>[m
+Date:   Sun Dec 1 23:50:39 2019 -0500[m
+[m
+    added markdown extensions to README files[m
+[m
+[33mcommit 3226c88e12edd16c5aaeefd122335c2072ad258e[m[m
+Author: LivStanley <ogs1@hood.edu>[m
+Date:   Sun Dec 1 23:30:29 2019 -0500[m
+[m
+    Added project start date to README[m
+[m
+[33mcommit 1c1f528e79ddc1275b3a54522316121e666e4ce3[m[m
+Author: LivStanley <ogs1@hood.edu>[m
+:[K[KDate:   Sun Dec 1 22:50:04 2019 -0500[m
+:[K[K[m
+:[K[K    initial import[m
+:[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K[?1l>bash-4.2$ ##Edit original FI[KinalProject readme
+bash-4.2$ cd ~/FinalProject/
+bash-4.2$ echo :[K"Samples[K[K[K[K[K[K[KThis is a new edit" >> README.md 
+bash-4.2$ ##Commit changes
+bash-4.2$ git commit -a -m "added a line"
+[master 2340c34] added a line
+ 1 file changed, 2 insertions(+)
+bash-4.2$ git push po[K[Korigin mat[Kster
+Counting objects: 5, done.
+Delta compression using up to 16 threads.
+Compressing objects:  33% (1/3)   Compressing objects:  66% (2/3)   Compressing objects: 100% (3/3)   Compressing objects: 100% (3/3), done.
+Writing objects:  33% (1/3)   Writing objects:  66% (2/3)   Writing objects: 100% (3/3)   Writing objects: 100% (3/3), 410 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To git@github.com:LivStanley/FinalProject.git
+   ed29619..2340c34  master -> master
+bash-4.2$ ##Switch to FinalProject_Copuy[K[Ky
+bash-4.2$ cd ~Final[K[K[K[K[K/Foma[K[K[KinalProject/[K_copy/[K[K[K[K[KCopy/
+bash: cd: /home/ogs1/FinalProject_Copy/: No such file or directory
+bash-4.2$ cd ~/FinalProject_Copy/[C[C[C[C[C[C[C[C[C[C[C[1P/[1P/[1P/[1P/[1P/[1P/[1P/[1P/[1P/[1P/[1P/[1P/[1P/[1P/[1P/[1P/[1P/[C[KCloneAndCompile/FinalProject_Copy/
+bash-4.2$ ##Pull new edits to update copy
+bash-4.2$ gir puy[K[K[K[K[Kt pull origin master
+Warning: Permanently added the RSA host key for IP address '192.30.253.113' to the list of known hosts.
+remote: Enumerating objects: 5, done.[K
+remote: Counting objects:  20% (1/5)[Kremote: Counting objects:  40% (2/5)[Kremote: Counting objects:  60% (3/5)[Kremote: Counting objects:  80% (4/5)[Kremote: Counting objects: 100% (5/5)[Kremote: Counting objects: 100% (5/5), done.[K
+remote: Compressing objects:  33% (1/3)[Kremote: Compressing objects:  66% (2/3)[Kremote: Compressing objects: 100% (3/3)[Kremote: Compressing objects: 100% (3/3), done.[K
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0[K
+Unpacking objects:  33% (1/3)   Unpacking objects:  66% (2/3)   Unpacking objects: 100% (3/3)   Unpacking objects: 100% (3/3), done.
+From github.com:LivStanley/FinalProject
+ * branch            master     -> FETCH_HEAD
+Updating ed29619..2340c34
+Fast-forward
+ README.md | 2 [32m++[m
+ 1 file changed, 2 insertions(+)
+bash-4.2$ ##Verify copy is up to [K[K[K[K[K[Kcurrent
+bash-4.2$ gir[Kt log --pretty=oneline --abbrev-commit
+[?1h=[33m2340c34[m added a line[m
+[33med29619[m Added .gitignore[m
+[33mcdd8717[m added markdown extensions to README files[m
+[33m3226c88[m Added project start date to README[m
+[33m1c1f528[m initial import[m
+[K[?1l>bash-4.2$ ##Make and commit changes in Final [KProjectCop[K[K[K_copy[K[K[K[KCopy
+bash-4.2$ echo "Adding a new lin f[K[Ke in copy"[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K"This line was added from Copuy[K[Ky" >> Re[KEADME.md 
+bash-4.2$ fit commit -a -,[Km "Added a line from Copy"[1P[1@g[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[master ffb7bd7] Added a line from Copy
+ 1 file changed, 1 insertion(+)
+bash-4.2$ git[K[K[K##Push changes tpo [K[K[Kp [K[Ko remote repository
+bash-4.2$ git push origin master
+Counting objects: 5, done.
+Delta compression using up to 16 threads.
+Compressing objects:  33% (1/3)   Compressing objects:  66% (2/3)   Compressing objects: 100% (3/3)   Compressing objects: 100% (3/3), done.
+Writing objects:  33% (1/3)   Writing objects:  66% (2/3)   Writing objects: 100% (3/3)   Writing objects: 100% (3/3), 371 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To git@github.com:LivStanley/FinalProject
+   2340c34..ffb7bd7  master -> master
+bash-4.2$ ##Switch to original FinalProject and pu;;[K[Kll Copy edits
+bash-4.2$ cd ~/FinalProject/
+bash-4.2$ git pull origin master
+remote: Enumerating objects: 5, done.[K
+remote: Counting objects:  20% (1/5)[Kremote: Counting objects:  40% (2/5)[Kremote: Counting objects:  60% (3/5)[Kremote: Counting objects:  80% (4/5)[Kremote: Counting objects: 100% (5/5)[Kremote: Counting objects: 100% (5/5), done.[K
+remote: Compressing objects:  50% (1/2)[Kremote: Compressing objects: 100% (2/2)[Kremote: Compressing objects: 100% (2/2), done.[K
+remote: Total 3 (delta 1), reused 3 (delta 1), pack-reused 0[K
+Unpacking objects:  33% (1/3)   Unpacking objects:  66% (2/3)   Unpacking objects: 100% (3/3)   Unpacking objects: 100% (3/3), done.
+From github.com:LivStanley/FinalProject
+ * branch            master     -> FETCH_HEAD
+Updating 2340c34..ffb7bd7
+Fast-forward
+ README.md | 1 [32m+[m
+ 1 file changed, 1 insertion(+)
+bash-4.2$ ##View edui[K[K[K[KCopy edit
+bash-4.2$ cat ER[K[KREADME.md 
+Final Project For BIFX 552
+Project started 12-01-2019
+TODO: ask sequencing center abt adapters
+This is a new edit
+This line was added from Copy
+bash-4.2$ ##View last two log entries
+bash-4.2$ git log -n 2
+[?1h=[33mcommit ffb7bd7745171322023791c608e45ff87a9097fd[m[m
+Author: LivStanley <ogs1@hood.edu>[m
+Date:   Tue Dec 3 13:39:37 2019 -0500[m
+[m
+    Added a line from Copy[m
+[m
+[33mcommit 2340c34e1cab06a80a728ec1ab710f3bc95bcd89[m[m
+Author: LivStanley <ogs1@hood.edu>[m
+Date:   Tue Dec 3 13:32:09 2019 -0500[m
+[m
+    added a line[m
+[K[?1l>bash-4.2$ exit
+exit
+Script done, file is chap5.txt
+bash-4.2$ cat chap5.txt 
+Script started on Tue 03 Dec 2019 01:18:49 PM EST
+[?1034hbash-4.2$ history
+    1  srun --pty R
+    2  srun --pty bash
+    3  srun --pty 
+    4  srun --pty bash
+    5  cd samtools-1.x
+    6  ls
+    7  cd ./
+    8  ls
+    9  cd cd \samtools-1.x
+   10  ls
+   11  cd ~
+   12  ls
+   13  man samtools
+   14  samtools view -H celegans.sam
+   15  https://github.com/vsbuffalo/bds-files.g
+   16  git clone git@github.com:vsbuffalo/bds-files.git
+   17  ssh-keygen -t rsa -b 4096 -C ogs1@hood.edu
+   18  ls -al ~/.ssh
+   19  clip < ~/.ssh/id_rsa.pub
+   20  man clip
+   21  srun --pty bash
+   22  ls
+   23  cd bds-files/
+   24  ls
+   25  scp --pty 
+   26  man samtools
+   27  man hmmer
+   28  srun --pty bash
+   29  R
+   30  ls
+   31  cd R
+   32  ls
+   33  cd x86_64-redhat-linux-gnu-library
+   34  ls
+   35  cd 3.6
+   36  ls
+   37  cd BiocManager
+   38  ls
+   39  view help
+   40  ls
+   41  R
+   42  ls
+   43  cd R
+   44  ls
+   45  cd x86_64-redhat-linux-gnu-library/
+   46  ls
+   47  cd 3.6
+   48  ls
+   49  cd BiocManager
+   50  ls
+   51  DESCRIPTION
+   52  cd DESCRIPTION
+   53  read DESCRIPTION 
+   54  R
+   55  ls
+   56  cd ./
+   57  ls
+   58  cd ../
+   59  ls
+   60  cd ../
+   61  ls
+   62  cd ../ | ls
+   63  cd ../
+   64  ls
+   65  man ls
+   66  cd ../
+   67  ls
+   68  cd ../
+   69  ls
+   70  cd ogs1
+   71  ls
+   72  cd bds-files/
+   73  ls
+   74  cd chapter-09-working-with-range-data/
+   75  ls
+   76  cd ../
+   77  ls
+   78  cd ../
+   79  ls
+   80  cd R
+   81  ls
+   82  library(BiocManager)
+   83  R
+   84  ls
+   85  cd x86_64-redhat-linux-gnu-library/
+   86  ls
+   87  cd 3.6
+   88  ls
+   89  cd BiocManager
+   90  ls
+   91  cd ../
+   92  cd BiocVersion
+   93  ls
+   94  cd INDEX
+   95  cd Meta
+   96  ls
+   97  cd package.rds
+   98  head package.rds
+   99  ls
+  100  cd ../
+  101  ls
+  102  cd ../
+  103  ls
+  104  R
+  105  ls
+  106  R
+  107  q
+  108  R
+  109  ls
+  110  cd R
+  111  ls
+  112  cd x86_64-redhat-linux-gnu-library/
+  113  ls
+  114  cd 3.6
+  115  ls
+  116  R
+  117  ls
+  118  R
+  119  samtools --version
+  120  samtools version
+  121  samtools -version
+  122  apt-show-versions samtools
+  123  dpkg -s samtools
+  124  ls
+  125  cd ../
+  126  ls
+  127  cd ogs1
+  128  ls
+  129  man samtools
+  130  head -n celegans.sam
+  131  head -n 10 celegans.sam
+  132  ls
+  133  cd bds-files/chapter-11-alignment/
+  134  head -n 10 celegans.sam
+  135  sametools view -H celegans.sam
+  136  samtools view -H celegans.sam
+  137  samtools view -h celegans.sam
+  138  samtools view -hS celegans.sam
+  139  CA      22222222222222222222222222222222222222222222222222      NM:i:0  MD:Z:50 AS:i:50 XS:i:19 RG:Z:VB00023_L001
+  140  V_2312838_2313331_4:0:0_0:0:0_e0b4      163     V       2312838 60      50M     =       2313282 494     CTTTGCGTAAGATGCATGATGCAATATTCTGAAAAATTAATATTTGTATT      22222222222222222222222222222222222222222222222222      NM:i:4  MD:Z:11T3T18T0T14       AS:i:30 XS:i:19 RG:Z:VB00023_L001
+  141  V_5070839_5071337_2:0:0_0:0:0_e6db      83      V       5071288 60      50M     =       5070839 -499    AAGAAGAAAAAGGAAGAACTACATTCAATTGATTTTTTGAAAAATGATTT      22222222222222222222222222222222222222222222222222      NM:i:0  MD:Z:50 AS:i:50 XS:i:22 RG:Z:VB00023_L001
+  142  V_5070839_5071337_2:0:0_0:0:0_e6db      163     V       5070839 60      50M     =       5071288 499     ATGTTGAAATTCTGAGAAAAATGTTGTATGAAACAATGGAGAAAAAGTGC      22222222222222222222222222222222222222222222222222      NM:i:2  MD:Z:15C16T17   AS:i:40 XS:i:20 RG:Z:VB00023_L001
+  143  V_6722310_6722779_2:0:0_1:0:0_fa53      99      V       6722310 60      50M     =       6722730 470     TAATCGCGGTAATAACTGATACATTGAAAAAATTTGAAATCAGGGAAAAT      22222222222222222222222222222222222222222222222222      NM:i:2  MD:Z:18T6C24    AS:i:40 XS:i:19 RG:Z:VB00023_L001
+  144  V_6722310_6722779_2:0:0_1:0:0_fa53      147     V       6722730 60      50M     =       6722310 -470    AGGTTGCATATATCTTTGTTGTTGTGCTTCATTTCCTTTTTTAGAGAAGG      22222222222222222222222222222222222222222222222222      NM:i:1  MD:Z:17T32      AS:i:45 XS:i:19 RG:Z:VB00023_L001
+  145  V_3824542_3824966_1:0:0_0:0:0_11491     83      V       3824917 60      50M     =       3824542 -425    CCTTTTTGGATTTAACAAAAAACTTGGCATGACGAGACCGTATATATAGC      22222222222222222222222222222222222222222222222222      NM:i:0  MD:Z:50 AS:i:50 XS:i:0  RG:Z:VB00023_L001
+  146  V_3824542_3824966_1:0:0_0:0:0_11491     163     V       3824542 60      50M     =       3824917 425     TTAACAAAAGCGCTGAGAAATAGGAGTGCTAAAATTTTTTGGAGTAGTGG      22222222222222222222222222222222222222222222222222      NM:i:1  MD:Z:45T4       AS:i:45 XS:i:0  RG:Z:VB00023_L001
+  147  V_11402405_11402844_2:0:0_0:0:0_114dd   99      V       11402405        60      50M     =       11402795        440     CACCCGCTGTACAGCATTATGATCCTCATTGAACCTGATGCAAGTGTGAT      22222222222222222222222222222222222222222222222222      NM:i:2  MD:Z:3A14T31    AS:i:41 XS:i:0  RG:Z:VB00023_L001
+  148  V_11402405_11402844_2:0:0_0:0:0_114dd   147     V       11402795        60      50M     =       11402405        -440    TTTTTCATATAAAACTACAATATTTTTCATGTGTCATAACGCCAGAAGGA      22222222222222222222222222222222222222222222222222      NM:i:0  MD:Z:50 AS:i:50 XS:i:0  RG:Z:VB00023_L001
+  149  V_13234024_13234619_1:0:0_0:0:0_11b1d   83      V       13234570        60      50M     =       13234024        -596    AACATGTTTGCCAATTACTTGGCTGGCGAAAACATTTCAGCCAGAAAAAA      22222222222222222222222222222222222222222222222222      NM:i:0  MD:Z:50 AS:i:50 XS:i:0  RG:Z:VB00023_L001
+  150  V_13234024_13234619_1:0:0_0:0:0_11b1d   163     V       13234024        60      50M     =       13234570        596     AGAAACAGCATCCGAGTTAATTTGTGATCAGATATGCAACATAATTTTTT      22222222222222222222222222222222222222222222222222      NM:i:1  MD:Z:6T43       AS:i:45 XS:i:0  RG:Z:VB00023_L001
+  151  tee -a chapter11
+  152  man tee
+  153  tee chapter_11_exercises
+  154  cd bds-files/chapter-11-alignment/
+  155  samtools view -hS celegans.sam 
+  156  samtools view -HS celegans.sam 
+  157  samtools view -H celegans.bam
+  158  samtools view -H celegans.bam | grep "^@RG"
+  159  samtools view -S celegans.sam| head -n 1
+  160  samtools view -S celegans.sam| tr '\t' '\n' | head -n 11
+  161  samtools flags
+  162  flags
+  163  man samtools flags
+  164  samtools flags
+  165  samtools Flags
+  166  samtools flags 147
+  167  R
+  168  ls
+  169  R
+  170  srun --pty R
+  171  $ samtools view -b celegans.sam > celegans_copy.bam
+  172  samtools
+  173  $ samtools view -b celegans.sam > celegans_copy.bam
+  174  samtools view
+  175  $ samtools view -bS celegans.sam > celegans_copy.bam
+  176  samtools view -Sh celegans.sam
+  177  ls
+  178  cd bds-files/chapter-11-alignment/
+  179  samtools view -Sh celegans.sam
+  180  $ samtools view -bS celegans.sam > celegans_copy.bam
+  181  samtools view -h celegans_copy.bam
+  182  cd ../
+  183  ls
+  184  cd ../
+  185  ls
+  186  rm celegans_copy.bam
+  187  rm chapter11
+  188  rm chapter_11_exercises 
+  189  rm Chapter_9 
+  190  ls
+  191  cd bds-files
+  192  cd chapter-11-alignment/
+  193  samtools view -H celegans.bam
+  194  samtools view -HS celegans.sam
+  195  samtools view -b celegans.sam > celegans_copy.bam
+  196  samtools view -bS celegans.sam > celegans_copy.bam
+  197  man samtools
+  198  man echo
+  199  man bc
+  200  pip install pysam
+  201  pysam
+  202  import pysam
+  203  man pysam
+  204  ##Configure git username and email 
+  205  git config --global user.name "LivStanley"
+  206  git config --global user.email "ogs1@hood.edu"
+  207  ##Enable terminal colors
+  208  git config --global color.ui true
+  209  ##Initialize git repository for my final project
+  210  mkdir ~/BIFX552/FinalProject
+  211  mkdir ~/FinalProject
+  212  git init ~/FinalProject/
+  213  ##View hidden git directory in initialized directory 
+  214  ls -a ~/FinalProject/
+  215  ##Transfer to FinalProject directory
+  216  cd ~/FinalProject/
+  217  ##Make new directory for cloning and compiling tools
+  218  mkdir ~/CloneAndCompile/
+  219  ##Set permissions to only myself
+  220  chmod 700 ~/CloneAndCompile/
+  221  ##transfer to CloneAndCompile
+  222  cd ~/CloneAndCompile/
+  223  ##Clone Seqtk repository
+  224  git clone git://github.com/lh3/seqtk.git
+  225  ##Move to Seqtk directory
+  226  cd seqtk
+  227  ##View contents of seqtk
+  228  ls seqtk
+  229  ls
+  230  exit
+  231  man script
+  232  script chap5.txt
+  233  exit
+  234  cd ~/FinalProject/
+  235  ##Check the git status of FinalProject
+  236  git status
+  237  ##Make blank readme files
+  238  touch README.txt
+  239  ##Make subdirectory data
+  240  mkdir data
+  241  ##Set permissions
+  242  chmod 755 data
+  243  ##Create readme file in data
+  244  touch data/README.txt
+  245  ##Tell git to track both readme.txt files
+  246  git add README.txt data/README.txt
+  247  ##List contents of FinalProject
+  248  ls
+  249  ##Verify README files are being tracked
+  250  git status
+  251  ##Edit readme file
+  252  echo "Final Project For BIFX 552" >> README.txt
+  253  ##Check status after editing
+  254  git status
+  255  ##Stage new changes to readme
+  256  git add README.txt
+  257  ##Check status to verify staging
+  258  git status
+  259  ##Commit staged files and changes with a message "initial import"
+  260  git commit -m "initial import"
+  261  ##Change default text editor
+  262  git config --global core.editor vim
+  263  ##Shortcut to stage all tracked files' changes with -a for all and -m for message
+  264  git commit -a -m "Includes all changes"
+  265  ##Check that there is nothing staged
+  266  git status
+  267  ##edit readme
+  268  echo "Project started 12-01-2019" >> README.txt
+  269  ##View difference between last commit and current version of file (only if current change has not been staged)
+  270  git diff
+  271  ##Stage readme edit
+  272  git add README.txt 
+  273  ##Check differences again
+  274  git diff
+  275  ##View differences between the latest commit and currently staged file
+  276  git diff --staged
+  277  ##View chain of commits
+  278  git log
+  279  ##commit recent changes
+  280  git commit -a -m "Added project start date to README"
+  281  ##View commit history again
+  282  git log
+  283  ##Add .md extension to README and data/README 
+  284  git mv README.txt README.md
+  285  git mv data/README.txt data/README.md
+  286  ##View files in directory to check for .md extension
+  287  ls
+  288  ##Check that changes are stages and ready for commit
+  289  git status
+  290  ##Commit file namechanges
+  291  git commit -m "added markdown extensions to README files"
+  292  exit
+  293  ls
+  294  script -a chap5.txt 
+  295  history
+  296  script -a chap5.txt
+  297  ##Generate empty FASTQ sequence files
+  298  ls
+  299  cd FinalProject/
+  300  ls
+  301  mkdir data/seqs/gene{A..D}_R{1,2}
+  302  mkdir /data/seqs/gene{A..D}_R{1,2}.fastq
+  303  mkdir -p /data/seqs/gene{A..D}_R{1,2}.fastq
+  304  mkdir -p data/seqs/gene{A..D}_R{1,2}.fastq
+  305  ##Check files were generated
+  306  ls
+  307  cd data
+  308  ls
+  309  cd seqs
+  310  ls
+  311  exit
+  312  script -a chap5.txt 
+  313  ##Move to Final Project directory and add .gitignore file
+  314  cd FinalProject/
+  315  touch .gitignore
+  316  ##Edit .gitignore to ignore fastq files
+  317  echo "data/seqs/*.fastq" >> .gitignore
+  318  ##Check git status for .gitignore
+  319  git status
+  320  ##Stage the .gitignore file
+  321  git add .gitignore 
+  322  ##Check that .gitignore file is staged
+  323  git status
+  324  ##Commit .gitignore
+  325  git commit -m "Added .gitignore"
+  326  ##Create a global .gitignore file
+  327  touch ~/.gitignore_global
+  328  ##Configure .gitignore_global
+  329  git config -- global core.excludesfile ~/.gitignore_global 
+  330  git config --global core.excludesfile ~/.gitignore_global
+  331  ##Unstage a file you do not want to commit yet
+  332  echo "TODO: ask sequencing center abt adapters" >> README.md 
+  333  git add README.md 
+  334  git status
+  335  git reset HEAD README.md 
+  336  ##Check reset was successful
+  337  git status
+  338  ##Generate an SSH key pair
+  339  ssh-keygen -b 2048
+  340  ssh
+  341  ##Change to .ssh directory
+  342  cd ~/.ssh
+  343  ##Append contents of public key to authorized keys file
+  344  cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+  345  ##Start ssh-agent
+  346  eval $(ssh-agent -s)
+  347  ##Add your private key to the ssh agent
+  348  ssh-add ~/.ssh/id_rsa
+  349  exit
+  350  ls
+  351  cd FinalProject/data/seqs/
+  352  cd seqs\data\FinalProject
+  353  cd ../
+  354  ls
+  355  cd ../\
+  356  ls
+  357  script -a chap5.txt 
+  358  git remote -v
+  359  git push origin master
+  360  ssh -T git@github.com
+  361  git remote -v
+  362  logout
+  363  git config --global user.name "LivStanley"
+  364  git congig --global user.email "ogs1@hood.edu"
+  365  git config --global user.email "ogs1@hood.edu"
+  366  ssh -T git@github.com
+  367  scp --pty bash
+  368  git status
+  369  exit
+  370  history
+bash-4.2$ bash-4.2$ ##Create FinalProject public repository on github.com
+bash: bash-4.2$: command not found
+bash-4.2$ bash-4.2$ ##push commits to public repository[1P[1P[1P[1P[1P[1P[1P[1P[1P[C[1P
+bash-4.2$  git push origin master[C[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Warning: Permanently added the RSA host key for IP address '140.82.114.4' to the list of known hosts.
+Everything up-to-date
+bash-4.2$ Clone [K[K[K[K[K[K##Clone public repositlry [K[K[K[K[Ktory to different direct[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kc[KClone [Kan[K[KAnd [KCompile
+bash-4.2$ [Kbash-4.2$ cd ~/CloneAndCompile/
+bash-4.2$ mkdir FinalProject_Copy
+bash-4.2$ chmod 755 FinalProject_Copy/
+bash-4.2$ git clone git@github.com>L[K[K:LivStanley/FinalProject FinalProject_copy/[1Popy/Copy/[C[C[C[C
+Cloning into 'FinalProject_Copy'...
+remote: Enumerating objects: 14, done.[K
+remote: Counting objects:   7% (1/14)[Kremote: Counting objects:  14% (2/14)[Kremote: Counting objects:  21% (3/14)[Kremote: Counting objects:  28% (4/14)[Kremote: Counting objects:  35% (5/14)[Kremote: Counting objects:  42% (6/14)[Kremote: Counting objects:  50% (7/14)[Kremote: Counting objects:  57% (8/14)[Kremote: Counting objects:  64% (9/14)[Kremote: Counting objects:  71% (10/14)[Kremote: Counting objects:  78% (11/14)[Kremote: Counting objects:  85% (12/14)[Kremote: Counting objects:  92% (13/14)[Kremote: Counting objects: 100% (14/14)[Kremote: Counting objects: 100% (14/14), done.[K
+remote: Compressing objects:  11% (1/9)[Kremote: Compressing objects:  22% (2/9)[Kremote: Compressing objects:  33% (3/9)[Kremote: Compressing objects:  44% (4/9)[Kremote: Compressing objects:  55% (5/9)[Kremote: Compressing objects:  66% (6/9)[Kremote: Compressing objects:  77% (7/9)[Kremote: Compressing objects:  88% (8/9)[Kremote: Compressing objects: 100% (9/9)[Kremote: Compressing objects: 100% (9/9), done.[K
+remote: Total 14 (delta 0), reused 14 (delta 0), pack-reused 0[K
+Receiving objects:   7% (1/14)   Receiving objects:  14% (2/14)   Receiving objects:  21% (3/14)   Receiving objects:  28% (4/14)   Receiving objects:  35% (5/14)   Receiving objects:  42% (6/14)   Receiving objects:  50% (7/14)   Receiving objects:  57% (8/14)   Receiving objects:  64% (9/14)   Receiving objects:  71% (10/14)   Receiving objects:  78% (11/14)   Receiving objects:  85% (12/14)   Receiving objects:  92% (13/14)   Receiving objects: 100% (14/14)   Receiving objects: 100% (14/14), done.
+bash-4.2$ ##Verify both repositories have the same commits
+bash-4.2$ git log
+fatal: Not a git repository (or any parent up to mount point /home)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+bash-4.2$ cd Final_pr[K[KO[KP[K[K[K[K[K[K[K/FinalProject_Copy[1PFinalProject_Copy[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/
+bash-4.2$ git log
+[?1h=[33mcommit ed296198d245e94800a9cd99b976a8446653e34e[m[m
+Author: LivStanley <ogs1@hood.edu>[m
+Date:   Mon Dec 2 21:21:47 2019 -0500[m
+[m
+    Added .gitignore[m
+[m
+[33mcommit cdd871779820953e786d56c45a2925840671ca2b[m[m
+Author: LivStanley <ogs1@hood.edu>[m
+Date:   Sun Dec 1 23:50:39 2019 -0500[m
+[m
+    added markdown extensions to README files[m
+[m
+[33mcommit 3226c88e12edd16c5aaeefd122335c2072ad258e[m[m
+Author: LivStanley <ogs1@hood.edu>[m
+Date:   Sun Dec 1 23:30:29 2019 -0500[m
+[m
+    Added project start date to README[m
+[m
+[33mcommit 1c1f528e79ddc1275b3a54522316121e666e4ce3[m[m
+Author: LivStanley <ogs1@hood.edu>[m
+:[K[KDate:   Sun Dec 1 22:50:04 2019 -0500[m
+:[K[K[m
+:[K[K    initial import[m
+:[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K[?1l>bash-4.2$ ##Edit original FI[KinalProject readme
+bash-4.2$ cd ~/FinalProject/
+bash-4.2$ echo :[K"Samples[K[K[K[K[K[K[KThis is a new edit" >> README.md 
+bash-4.2$ ##Commit changes
+bash-4.2$ git commit -a -m "added a line"
+[master 2340c34] added a line
+ 1 file changed, 2 insertions(+)
+bash-4.2$ git push po[K[Korigin mat[Kster
+Counting objects: 5, done.
+Delta compression using up to 16 threads.
+Compressing objects:  33% (1/3)   Compressing objects:  66% (2/3)   Compressing objects: 100% (3/3)   Compressing objects: 100% (3/3), done.
+Writing objects:  33% (1/3)   Writing objects:  66% (2/3)   Writing objects: 100% (3/3)   Writing objects: 100% (3/3), 410 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To git@github.com:LivStanley/FinalProject.git
+   ed29619..2340c34  master -> master
+bash-4.2$ ##Switch to FinalProject_Copuy[K[Ky
+bash-4.2$ cd ~Final[K[K[K[K[K/Foma[K[K[KinalProject/[K_copy/[K[K[K[K[KCopy/
+bash: cd: /home/ogs1/FinalProject_Copy/: No such file or directory
+bash-4.2$ cd ~/FinalProject_Copy/[C[C[C[C[C[C[C[C[C[C[C[1P/[1P/[1P/[1P/[1P/[1P/[1P/[1P/[1P/[1P/[1P/[1P/[1P/[1P/[1P/[1P/[1P/[C[KCloneAndCompile/FinalProject_Copy/
+bash-4.2$ ##Pull new edits to update copy
+bash-4.2$ gir puy[K[K[K[K[Kt pull origin master
+Warning: Permanently added the RSA host key for IP address '192.30.253.113' to the list of known hosts.
+remote: Enumerating objects: 5, done.[K
+remote: Counting objects:  20% (1/5)[Kremote: Counting objects:  40% (2/5)[Kremote: Counting objects:  60% (3/5)[Kremote: Counting objects:  80% (4/5)[Kremote: Counting objects: 100% (5/5)[Kremote: Counting objects: 100% (5/5), done.[K
+remote: Compressing objects:  33% (1/3)[Kremote: Compressing objects:  66% (2/3)[Kremote: Compressing objects: 100% (3/3)[Kremote: Compressing objects: 100% (3/3), done.[K
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0[K
+Unpacking objects:  33% (1/3)   Unpacking objects:  66% (2/3)   Unpacking objects: 100% (3/3)   Unpacking objects: 100% (3/3), done.
+From github.com:LivStanley/FinalProject
+ * branch            master     -> FETCH_HEAD
+Updating ed29619..2340c34
+Fast-forward
+ README.md | 2 [32m++[m
+ 1 file changed, 2 insertions(+)
+bash-4.2$ ##Verify copy is up to [K[K[K[K[K[Kcurrent
+bash-4.2$ gir[Kt log --pretty=oneline --abbrev-commit
+[?1h=[33m2340c34[m added a line[m
+[33med29619[m Added .gitignore[m
+[33mcdd8717[m added markdown extensions to README files[m
+[33m3226c88[m Added project start date to README[m
+[33m1c1f528[m initial import[m
+[K[?1l>bash-4.2$ ##Make and commit changes in Final [KProjectCop[K[K[K_copy[K[K[K[KCopy
+bash-4.2$ echo "Adding a new lin f[K[Ke in copy"[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K"This line was added from Copuy[K[Ky" >> Re[KEADME.md 
+bash-4.2$ fit commit -a -,[Km "Added a line from Copy"[1P[1@g[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[master ffb7bd7] Added a line from Copy
+ 1 file changed, 1 insertion(+)
+bash-4.2$ git[K[K[K##Push changes tpo [K[K[Kp [K[Ko remote repository
+bash-4.2$ git push origin master
+Counting objects: 5, done.
+Delta compression using up to 16 threads.
+Compressing objects:  33% (1/3)   Compressing objects:  66% (2/3)   Compressing objects: 100% (3/3)   Compressing objects: 100% (3/3), done.
+Writing objects:  33% (1/3)   Writing objects:  66% (2/3)   Writing objects: 100% (3/3)   Writing objects: 100% (3/3), 371 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To git@github.com:LivStanley/FinalProject
+   2340c34..ffb7bd7  master -> master
+bash-4.2$ ##Switch to original FinalProject and pu;;[K[Kll Copy edits
+bash-4.2$ cd ~/FinalProject/
+bash-4.2$ git pull origin master
+remote: Enumerating objects: 5, done.[K
+remote: Counting objects:  20% (1/5)[Kremote: Counting objects:  40% (2/5)[Kremote: Counting objects:  60% (3/5)[Kremote: Counting objects:  80% (4/5)[Kremote: Counting objects: 100% (5/5)[Kremote: Counting objects: 100% (5/5), done.[K
+remote: Compressing objects:  50% (1/2)[Kremote: Compressing objects: 100% (2/2)[Kremote: Compressing objects: 100% (2/2), done.[K
+remote: Total 3 (delta 1), reused 3 (delta 1), pack-reused 0[K
+Unpacking objects:  33% (1/3)   Unpacking objects:  66% (2/3)   Unpacking objects: 100% (3/3)   Unpacking objects: 100% (3/3), done.
+From github.com:LivStanley/FinalProject
+ * branch            master     -> FETCH_HEAD
+Updating 2340c34..ffb7bd7
+Fast-forward
+ README.md | 1 [32m+[m
+ 1 file changed, 1 insertion(+)
+bash-4.2$ ##View edui[K[K[K[KCopy edit
+bash-4.2$ cat ER[K[KREADME.md 
+Final Project For BIFX 552
+Project started 12-01-2019
+TODO: ask sequencing center abt adapters
+This is a new edit
+This line was added from Copy
+bash-4.2$ ##View last two log entries
+bash-4.2$ git log -n 2
+[?1h=[33mcommit ffb7bd7745171322023791c608e45ff87a9097fd[m[m
+Author: LivStanley <ogs1@hood.edu>[m
+Date:   Tue Dec 3 13:39:37 2019 -0500[m
+[m
+    Added a line from Copy[m
+[m
+[33mcommit 2340c34e1cab06a80a728ec1ab710f3bc95bcd89[m[m
+Author: LivStanley <ogs1@hood.edu>[m
+Date:   Tue Dec 3 13:32:09 2019 -0500[m
+[m
+    added a line[m
+[K[?1l>bash-4.2$ exit
+exit
+
+Script done on Tue 03 Dec 2019 01:44:25 PM EST
+bash-4.2$ quit
+bash: quit: command not found
+bash-4.2$ exit
+exit
+
+Script done on Tue 03 Dec 2019 01:45:20 PM EST
+Script started on Wed 04 Dec 2019 01:39:37 AM EST
+[?1034hbash-4.2$ ##Make an a[Kexampe[Kle merge conflict
+bash-4.2$ ##Change to FinalProc[Kject_pro[K[K[KClone[K[K[K[Kopy
+bash-4.2$ cd ~/CloneAndCompile/FinalProject_Copy/
+bash-4.2$ ##Edit Re[KEADME
+bash-4.2$ echo "E[KC[KMerge Con[K[K[Kconflict from Copy"[1@I[1@n[1@d[1@u[1P[1P[1P[1P[1@E[1P[1@C[1@r[1@e[1@a[1@t[1@e[1@ [C[1P[1@m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C >> README.md 
+bash-4.2$ ##Commit and push merge from Copy
+bash-4.2$ git status
+# On branch master
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	[31mmodified:   README.md[m
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+bash-4.2$ git commit -a -m "Merge Conflict exmp[K[Kample"
+[master 2c438d5] Merge Conflict example
+ 1 file changed, 1 insertion(+)
+bash-4.2$ git status
+# On branch master
+# Your branch is ahead of 'origin/master' by 1 commit.
+#   (use "git push" to publish your local commits)
+#
+nothing to commit, working directory clean
+bash-4.2$ git push master origin[K[K[K[K[K[K[K[K[K[K[K[K[Korigin master
+Counting objects: 5, done.
+Delta compression using up to 16 threads.
+Compressing objects:  33% (1/3)   Compressing objects:  66% (2/3)   Compressing objects: 100% (3/3)   Compressing objects: 100% (3/3), done.
+Writing objects:  33% (1/3)   Writing objects:  66% (2/3)   Writing objects: 100% (3/3)   Writing objects: 100% (3/3), 374 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To git@github.com:LivStanley/FinalProject
+   ffb7bd7..2c438d5  master -> master
+bash-4.2$ ##Swith[Kch back to origional FinalProject D[Kdirector[K[K[K[K[K[K[K[K[K[Kt[1P[C[1P[1@i[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+bash-4.2$ cd ~/FinalProject/
+bash-4.2$ ##Make changes to README to induce merge conflict
+bash-4.2$ echo "Merge Conflict E[Kexamplt from [K[K[K[K[K[K[Ke from origional [K[K[K[Kd[K[Knal file[K[K[K[KFinalProject" >> README.md 
+bash-4.2$ ##Push[K[K[K[KCommit and push changes
+bash-4.2$ git status
+# On branch master
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	[31mmodified:   README.md[m
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	[31mchap5.txt[m
+no changes added to commit (use "git add" and/or "git commit -a")
+bash-4.2$ git comit[K[Kmit -[K[K[K[K[K[K[K[K[K add README.md 
+bash-4.2$ git status
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	[32mmodified:   README.md[m
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	[31mchap5.txt[m
+bash-4.2$ git commit -m "Merge Conflict example from original FinalProject"
+[master 8370f4c] Merge Conflict example from original FinalProject
+ 1 file changed, 1 insertion(+)
+bash-4.2$ ##Push edit to remote repository
+bash-4.2$ git push origin master
+To git@github.com:LivStanley/FinalProject.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'git@github.com:LivStanley/FinalProject.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first merge the remote changes (e.g.,
+hint: 'git pull') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+bash-4.2$ ##Pull edits from Copy 
+bash-4.2$ git pu;;[K[Kll origin master
+remote: Enumerating objects: 5, done.[K
+remote: Counting objects:  20% (1/5)[Kremote: Counting objects:  40% (2/5)[Kremote: Counting objects:  60% (3/5)[Kremote: Counting objects:  80% (4/5)[Kremote: Counting objects: 100% (5/5)[Kremote: Counting objects: 100% (5/5), done.[K
+remote: Compressing objects:  50% (1/2)[Kremote: Compressing objects: 100% (2/2)[Kremote: Compressing objects: 100% (2/2), done.[K
+remote: Total 3 (delta 1), reused 3 (delta 1), pack-reused 0[K
+Unpacking objects:  33% (1/3)   Unpacking objects:  66% (2/3)   Unpacking objects: 100% (3/3)   Unpacking objects: 100% (3/3), done.
+From github.com:LivStanley/FinalProject
+ * branch            master     -> FETCH_HEAD
+Auto-merging README.md
+CONFLICT (content): Merge conflict in README.md
+Automatic merge failed; fix conflicts and then commit the result.
+bash-4.2$ ##Check the status
+bash-4.2$ git status
+# On branch master
+# You have unmerged paths.
+#   (fix conflicts and run "git commit")
+#
+# Unmerged paths:
+#   (use "git add <file>..." to mark resolution)
+#
+#	[31mboth modified:      README.md[m
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	[31mchap5.txt[m
+no changes added to commit (use "git add" and/or "git commit -a")
+bash-4.2$ ##F[KView README.md
+bash-4.2$ cat README.md 
+Final Project For BIFX 552
+Project started 12-01-2019
+TODO: ask sequencing center abt adapters
+This is a new edit
+This line was added from Copy
+<<<<<<< HEAD
+Merge Conflict example from original FinalProject
+=======
+Create merge conflict from Copy
+>>>>>>> 2c438d5f397524161e73f9300c3589aba0c00930
+bash-4.2$ ##Edit the [K[K[K[KREADME to resole[Kve conflicts
+bash-4.2$ vim README.md 
+[?1049h[?1h=[2;1H▽[6n[2;1H  [1;1H]11;?[1;16r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[16;1H"README.md" 10L, 296C[>c[1;1HFinal Project For BIFX 552
+Project started 12-01-2019
+TODO: ask sequencing center abt adapters
+This is a new edit
+This line was added from Copy
+<<<<<<< HEAD
+[35mMerge Conflict example from original FinalProject
+=======[m
+Create merge conflict from Copy
+>>>>>>> 2c438d5f397524161e73f9300c3589aba0c00930
+[94m~                                                                                                                                                       [12;1H~                                                                                                                                                       [13;1H~                                                                                                                                                       [14;1H~                                                                                                                                                       [15;1H~                                                                                                                                                       [m[16;135H1,1[11CAll[1;1H[?12l[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?25l[16;135H2[2;1H[?12l[?25h[?25l[16;135H3[3;1H[?12l[?25h[?25l[16;135H4[4;1H[?12l[?25h[?25l[16;135H5[5;1H[?12l[?25h[?25l
+[106m<[10;7H>[m[16;135H6[6;1H[?12l[?25h[?25l<[10;7H>[16;135H7[7;1H[?12l[?25h[?25l[16;135H8[8;1H[?12l[?25h[?25l[16;135H9[9;1H[?12l[?25h[?25l[6;7H[106m<[10;1H>[m[16;135H10,1[10;1H[?12l[?25h[?25l[6;7H<[10;1H>[16;135H9,3[9;31H[?12l[?25h[?25l[16;138H0[9;30H[?12l[?25h[?25l[16;137H29[9;29H[?12l[?25h[?25l[16;138H8[9;28H[?12l[?25h[?25l[16;138H7[9;27H[?12l[?25h[?25l[16;138H6[9;26H[?12l[?25h[?25l[16;138H5[9;25H[?12l[?25h[?25l[16;138H4[9;24H[?12l[?25h[?25l[16;138H3[9;23H[?12l[?25h[?25l[16;138H2[9;22H[?12l[?25h[?25l[16;138H1[9;21H[?12l[?25h[?25l[16;138H0[9;20H[?12l[?25h[?25l[16;137H19[9;19H[?12l[?25h[?25l[16;138H8[9;18H[?12l[?25h[?25l[16;138H7[9;17H[?12l[?25h[?25l[16;138H6[9;16H[?12l[?25h[?25l[16;138H5[9;15H[?12l[?25h[?25l[16;138H4[9;14H[?12l[?25h[?25l[16;138H3[9;13H[?12l[?25h[?25l[16;138H2[9;12H[?12l[?25h[?25l[16;138H1[9;11H[?12l[?25h[?25l[16;138H0[9;10H[?12l[?25h[?25l[16;137H9 [9;9H[?12l[?25h[?25l[16;137H8[9;8H[?12l[?25h[?25l[16;137H7[9;7H[?12l[?25h[?25l[16;137H6[9;6H[?12l[?25h[?25l[16;137H5[9;5H[?12l[?25h[?25l[16;137H4[9;4H[?12l[?25h[?25l[16;137H3[9;3H[?12l[?25h[?25l[16;137H2[9;2H[?12l[?25h[?25l[16;137H1[9;1H[?12l[?25h[?25l[16;135H8,7[8;7H[?12l[?25h[?25l[16;135H9[9;7H[?12l[?25h[?25l[6;1H[106m<[10;7H>[m[16;135H10,7[10;7H[?12l[?25h[?25l[6;1H<[10;7H>[16;138H8[10;8H[?12l[?25h[?25l[6;1H[106m<[10;7H>[m[16;138H7[10;7H[?12l[?25h[?25l[6;1H<[106m<[10;6H>[m>[16;138H6[10;6H[?12l[?25h[?25l[6;2H<[106m<[10;5H>[m>[16;138H5[10;5H[?12l[?25h[?25l[6;3H<[106m<[10;4H>[m>[16;138H4[10;4H[?12l[?25h[?25l[6;4H<[106m<[10;3H>[m>[16;138H3[10;3H[?12l[?25h[?25l[6;5H<[106m<[10;2H>[m>[16;138H2[10;2H[?12l[?25h[?25l[6;6H<[106m<[10;1H>[m>[16;138H1[10;1H[?12l[?25h[?25l[6;7H<[10;1H>[16;135H9,3[9;31H[?12l[?25h[?25l[16;138H0[9;30H[?12l[?25h[?25l[16;137H29[9;29H[?12l[?25h[?25l[16;138H8[9;28H[?12l[?25h[?25l[16;138H7[9;27H[?12l[?25h[?25l[16;138H6[9;26H[?12l[?25h[?25l[16;138H5[9;25H[?12l[?25h[?25l[16;138H4[9;24H[?12l[?25h[?25l[16;138H3[9;23H[?12l[?25h[?25l[16;138H2[9;22H[?12l[?25h[?25l[16;138H1[9;21H[?12l[?25h[?25l[16;138H0[9;20H[?12l[?25h[?25l[16;135H8,7 [8;7H[?12l[?25h[?25l[16;135H7,20[7;20H[?12l[?25h[?25l[16;135H6,12[6;12H[?12l[?25h[?25l[16;138H1[6;11H[?12l[?25h[?25l[16;138H0[6;10H[?12l[?25h[?25l[16;137H9 [6;9H[?12l[?25h[?25l[16;137H8[6;8H[?12l[?25h[?25l[106m<[10;1H>[m[16;137H7[6;7H[?12l[?25h[?25l[106m<[m<[10;1H>[106m>[m[16;137H6[6;6H[?12l[?25h[?25l[106m<[m<[10;2H>[106m>[m[16;137H5[6;5H[?12l[?25h[?25l[106m<[m<[10;3H>[106m>[m[16;137H4[6;4H[?12l[?25h[?25l[106m<[m<[10;4H>[106m>[m[16;137H3[6;3H[?12l[?25h[?25l[106m<[m<[10;5H>[106m>[m[16;137H2[6;2H[?12l[?25h[?25l[106m<[m<[10;6H>[106m>[m[16;137H1[6;1H[?12l[?25h[?25l<[10;7H>[16;135H7[7;1H[?12l[?25h[?25l[16;135H8[8;1H[?12l[?25h[?25l[16;135H9[9;1H[?12l[?25h[?25l[6;7H[106m<[10;1H>[m[16;135H10,1[10;1H[?12l[?25h[?25l[6;6H[106m<[m<[10;1H>[106m>[m[16;138H2[10;2H[?12l[?25h[?25l[6;5H[106m<[m<[10;2H>[106m>[m[16;138H3[10;3H[?12l[?25h[?25l[6;4H[106m<[m<[10;3H>[106m>[m[16;138H4[10;4H[?12l[?25h[?25l[6;3H[106m<[m<[10;4H>[106m>[m[16;138H5[10;5H[?12l[?25h[?25l[6;2H[106m<[m<[10;5H>[106m>[m[16;138H6[10;6H[?12l[?25h[?25l[6;1H[106m<[m<[10;6H>[106m>[m[16;138H7[10;7H[?12l[?25h[?25l[6;1H<[10;7H>[16;138H8[10;8H[?12l[?25h[?25l[16;138H9[10;9H[?12l[?25h[?25l[16;138H10[10;10H[?12l[?25h[?25l[16;139H1[10;11H[?12l[?25h[?25l[16;139H2[10;12H[?12l[?25h[?25l[16;139H3[10;13H[?12l[?25h[?25l[16;139H4[10;14H[?12l[?25h[?25l[16;139H5[10;15H[?12l[?25h[?25l[16;139H6[10;16H[?12l[?25h[?25l[16;139H7[10;17H[?12l[?25h[?25l[16;139H8[10;18H[?12l[?25h[?25l[16;139H9[10;19H[?12l[?25h[?25l[16;138H20[10;20H[?12l[?25h[?25l[16;139H1[10;21H[?12l[?25h[?25l[16;139H2[10;22H[?12l[?25h[?25l[16;139H3[10;23H[?12l[?25h[?25l[16;139H4[10;24H[?12l[?25h[?25l[16;139H5[10;25H[?12l[?25h[?25l[16;139H6[10;26H[?12l[?25h[?25l[16;139H7[10;27H[?12l[?25h[?25l[16;139H8[10;28H[?12l[?25h[?25l[16;139H9[10;29H[?12l[?25h[?25l[16;138H30[10;30H[?12l[?25h[?25l[16;139H1[10;31H[?12l[?25h[?25l[16;139H2[10;32H[?12l[?25h[?25l[16;139H3[10;33H[?12l[?25h[?25l[16;139H4[10;34H[?12l[?25h[?25l[16;139H5[10;35H[?12l[?25h[?25l[16;139H6[10;36H[?12l[?25h[?25l[16;139H7[10;37H[?12l[?25h[?25l[16;139H8[10;38H[?12l[?25h[?25l[16;139H9[10;39H[?12l[?25h[?25l[16;138H40[10;40H[?12l[?25h[?25l[16;139H1[10;41H[?12l[?25h[?25l[16;139H2[10;42H[?12l[?25h[?25l[16;139H3[10;43H[?12l[?25h[?25l[16;139H4[10;44H[?12l[?25h[?25l[16;139H5[10;45H[?12l[?25h[?25l[16;139H6[10;46H[?12l[?25h[?25l[16;139H7[10;47H[?12l[?25h[?25l[16;139H8[10;48H[?12l[?25h[?25l[16;139H7[10;47H[?12l[?25h[?25l[16;139H6[10;46H[?12l[?25h[?25l[16;139H5[10;45H[?12l[?25h[?25l[16;139H4[10;44H[?12l[?25h[?25l[16;139H3[10;43H[?12l[?25h[?25l[16;139H2[10;42H[?12l[?25h[?25l[16;139H1[10;41H[?12l[?25h[?25l[16;139H0[10;40H[?12l[?25h[?25l[16;138H39[10;39H[?12l[?25h[?25l[16;139H8[10;38H[?12l[?25h[?25l[16;139H7[10;37H[?12l[?25h[?25l[16;139H6[10;36H[?12l[?25h[?25l[16;139H5[10;35H[?12l[?25h[?25l[16;139H4[10;34H[?12l[?25h[?25l[16;139H3[10;33H[?12l[?25h[?25l[16;135H9,31 [9;31H[?12l[?25h[?25l[16;135H8,7 [8;7H[?12l[?25h[?25l[16;135H7,33[7;33H[?12l[?25h[?25l[16;138H2[7;32H[?12l[?25h[?25l[16;138H1[7;31H[?12l[?25h[?25l[16;138H0[7;30H[?12l[?25h[?25l[16;137H29[7;29H[?12l[?25h[?25l[16;138H8[7;28H[?12l[?25h[?25l[16;138H7[7;27H[?12l[?25h[?25l[16;138H6[7;26H[?12l[?25h[?25l[16;138H5[7;25H[?12l[?25h[?25l[16;138H4[7;24H[?12l[?25h[?25l[16;138H3[7;23H[?12l[?25h[?25l[16;138H2[7;22H[?12l[?25h[?25l[16;138H1[7;21H[?12l[?25h[?25l[16;138H0[7;20H[?12l[?25h[?25l[16;137H19[7;19H[?12l[?25h[?25l[16;138H8[7;18H[?12l[?25h[?25l[16;138H7[7;17H[?12l[?25h[?25l[16;138H6[7;16H[?12l[?25h[?25l[16;138H5[7;15H[?12l[?25h[?25l[16;138H4[7;14H[?12l[?25h[?25l[16;138H3[7;13H[?12l[?25h[?25l[16;138H2[7;12H[?12l[?25h[?25l[16;138H1[7;11H[?12l[?25h[?25l[16;138H0[7;10H[?12l[?25h[?25l[16;137H9 [7;9H[?12l[?25h[?25l[16;137H8[7;8H[?12l[?25h[?25l[16;137H7[7;7H[?12l[?25h[?25l[16;137H6[7;6H[?12l[?25h[?25l[16;137H5[7;5H[?12l[?25h[?25l[16;137H4[7;4H[?12l[?25h[?25l[16;137H3[7;3H[?12l[?25h[?25l[16;137H2[7;2H[?12l[?25h[?25l[16;137H1[7;1H[?12l[?25h[?25l[6;1H[106m<[10;7H>[m[16;135H6[6;1H[?12l[?25h[?25l[16;1H[1m-- INSERT --[m[16;13H[K[16;135H6,1[11CAll[6;1H[?12l[?25h[?25l[7;15r[7;1H[L[1;16r[6;1H[106m [m[6;2H[K[7;1H<<<<<<< HEAD[10;7H[106m [m[11;7H>[16;135H[K[16;135H7,1[11CAll[6;1H[K[7;1H[106m<[m[10;7H [11;7H[106m>[7;1H[?12l[?25h[?25l[m<[11;7H>[16;135H8[8;1H[?12l[?25h[?25l[7;1H[106m<[11;7H>[m[16;135H7[7;1H[?12l[?25h[?25l[6;15r[15;1H
+[1;16r[6;1H<
+[35m[106mM[m[10;7H>[15;1H[94m~                                                                                                                                                       [m[16;135H[K[16;135H6,1[11CAll[6;1H[106m<[m
+[35mM[m[10;7H[106m>[6;1H[?12l[?25h[?25l[m<[10;7H>[16;135H5[5;1H[?12l[?25h[?25l
+[106m<[10;7H>[m[16;135H6[6;1H[?12l[?25h[?25l<[10;7H>[16;135H7[7;1H[?12l[?25h[?25l[8;15r[8;1H[L[1;16r[7;1H[K[8;1H[35mMerge Conflict example from original FinalProject[m[16;135H[K[16;135H8,1[11CAll[8;1H[?12l[?25h[?25l[16;137H2[8;2H[?12l[?25h[?25l[16;135H9[9;2H[?12l[?25h[?25l[16;137H1[9;1H[?12l[?25h[?25l[16;135H8[8;1H[?12l[?25h[?25l[16;135H7[7;1H[?12l[?25h[?25l[6;1H[106m<[11;7H>[m[16;135H6[6;1H[?12l[?25h[?25l<[106m<[11;6H>[m>[16;137H2[6;2H[?12l[?25h[?25l<[106m<[11;5H>[m>[16;137H3[6;3H[?12l[?25h[?25l<[106m<[11;4H>[m>[16;137H4[6;4H[?12l[?25h[?25l<[106m<[11;3H>[m>[16;137H5[6;5H[?12l[?25h[?25l<[106m<[11;2H>[m>[16;137H6[6;6H[?12l[?25h[?25l<[106m<[11;1H>[m>[16;137H7[6;7H[?12l[?25h[?25l[16;137H8[6;8H[?12l[?25h[?25l<[11;1H>[16;137H9[6;9H[?12l[?25h[?25l[16;137H10[6;10H[?12l[?25h[?25l[16;138H1[6;11H[?12l[?25h[?25l[16;138H2[6;12H[?12l[?25h[?25l[16;138H3[6;13H[?12l[?25h[?25l[6;12H[K[16;138H2[6;12H[?12l[?25h[?25l[6;11H[K[16;138H1[6;11H[?12l[?25h[?25l[6;10H[K[16;138H0[6;10H[?12l[?25h[?25l[6;9H[K[16;137H9 [6;9H[?12l[?25h[?25l[106m<[11;1H>[m[16;137H8[6;8H[?12l[?25h[?25l[6;7H[K[6;6H[106m<[m[16;137H7[6;7H[?12l[?25h[?25l[6;6H[K[6;5H[106m<[m[16;137H6[6;6H[?12l[?25h[?25l[6;5H[K[6;4H[106m<[m[16;137H5[6;5H[?12l[?25h[?25l[6;4H[K[6;3H[106m<[m[16;137H4[6;4H[?12l[?25h[?25l[6;3H[K[6;2H[106m<[m[16;137H3[6;3H[?12l[?25h[?25l[6;2H[K[6;1H[106m<[m[16;137H2[6;2H[?12l[?25h[?25l[6;1H[K[11;1H>[16;137H1[6;1H[?12l[?25h[?25l[5;15r[15;1H
+[1;16r[5;1HThis line was added from Copy[15;1H[94m~                                                                                                                                                       [m[16;135H[K[16;135H5,30[10CAll[5;30H[?12l[?25h[?25l[16;135H6,1 [6;1H[?12l[?25h[?25l[16;135H7,30[7;30H[?12l[?25h[?25l[16;135H8,8 [8;8H[?12l[?25h[?25l[8;7H[K[16;137H7[8;7H[?12l[?25h[?25l[8;6H[K[16;137H6[8;6H[?12l[?25h[?25l[8;5H[K[16;137H5[8;5H[?12l[?25h[?25l[8;4H[K[16;137H4[8;4H[?12l[?25h[?25l[8;3H[K[16;137H3[8;3H[?12l[?25h[?25l[8;2H[K[16;137H2[8;2H[?12l[?25h[?25l[8;1H[K[16;137H1[8;1H[?12l[?25h[?25l[7;15r[15;1H
+[1;16r[7;1HMerge Conflict example from original FinalProject[15;1H[94m~                                                                                                                                                       [m[16;135H[K[16;135H7,50[10CAll[7;50H[?12l[?25h[?25l[8;15r[8;1H[L[1;16r[16;135H[K[16;135H8,1[11CAll[8;1H[?12l[?25h[?25l[7;15r[15;1H
+[1;16r[7;1HMerge Conflict example from original FinalProject[15;1H[94m~                                                                                                                                                       [m[16;135H[K[16;135H7,50[10CAll[7;50H[?12l[?25h[?25l[8;15r[8;1H[L[1;16r[16;135H[K[16;135H8,1[11CAll[8;1H[?12l[?25h[?25l[16;135H9[9;1H[?12l[?25h[?25l[16;135H10,1[10;1H[?12l[?25h[?25l[16;138H2[10;2H[?12l[?25h[?25l[16;138H3[10;3H[?12l[?25h[?25l[16;138H4[10;4H[?12l[?25h[?25l[16;138H5[10;5H[?12l[?25h[?25l[16;138H6[10;6H[?12l[?25h[?25l[16;138H7[10;7H[?12l[?25h[?25l[16;138H8[10;8H[?12l[?25h[?25l[16;138H9[10;9H[?12l[?25h[?25l[16;138H10[10;10H[?12l[?25h[?25l[16;139H1[10;11H[?12l[?25h[?25l[16;139H2[10;12H[?12l[?25h[?25l[16;139H3[10;13H[?12l[?25h[?25l[16;139H4[10;14H[?12l[?25h[?25l[16;139H5[10;15H[?12l[?25h[?25l[16;139H6[10;16H[?12l[?25h[?25l[16;139H7[10;17H[?12l[?25h[?25l[16;139H8[10;18H[?12l[?25h[?25l[16;139H9[10;19H[?12l[?25h[?25l[16;138H20[10;20H[?12l[?25h[?25l[16;139H1[10;21H[?12l[?25h[?25l[16;139H2[10;22H[?12l[?25h[?25l[16;139H3[10;23H[?12l[?25h[?25l[16;139H4[10;24H[?12l[?25h[?25l[16;139H5[10;25H[?12l[?25h[?25l[16;139H6[10;26H[?12l[?25h[?25l[16;139H7[10;27H[?12l[?25h[?25l[16;139H8[10;28H[?12l[?25h[?25l[16;139H9[10;29H[?12l[?25h[?25l[16;138H30[10;30H[?12l[?25h[?25l[16;139H1[10;31H[?12l[?25h[?25l[16;139H2[10;32H[?12l[?25h[?25l[16;139H3[10;33H[?12l[?25h[?25l[16;139H4[10;34H[?12l[?25h[?25l[16;139H5[10;35H[?12l[?25h[?25l[16;139H6[10;36H[?12l[?25h[?25l[16;139H7[10;37H[?12l[?25h[?25l[16;139H8[10;38H[?12l[?25h[?25l[16;139H9[10;39H[?12l[?25h[?25l[16;138H40[10;40H[?12l[?25h[?25l[16;139H1[10;41H[?12l[?25h[?25l[16;139H2[10;42H[?12l[?25h[?25l[16;139H3[10;43H[?12l[?25h[?25l[16;139H4[10;44H[?12l[?25h[?25l[16;139H5[10;45H[?12l[?25h[?25l[16;139H6[10;46H[?12l[?25h[?25l[16;139H7[10;47H[?12l[?25h[?25l[16;139H8[10;48H[?12l[?25h[?25l0[10;48H[K[16;139H7[10;47H[?12l[?25h[?25l0[10;47H[K[16;139H6[10;46H[?12l[?25h[?25l[10;46H[K[16;139H5[10;45H[?12l[?25h[?25l[10;45H[K[16;139H4[10;44H[?12l[?25h[?25l0[10;44H[K[16;139H3[10;43H[?12l[?25h[?25l[10;43H[K[16;139H2[10;42H[?12l[?25h[?25l0[10;42H[K[16;139H1[10;41H[?12l[?25h[?25l0[10;41H[K[16;139H0[10;40H[?12l[?25h[?25l0[10;40H[K[16;138H39[10;39H[?12l[?25h[?25l0[10;39H[K[16;139H8[10;38H[?12l[?25h[?25l0[10;38H[K[16;139H7[10;37H[?12l[?25h[?25l0[10;37H[K[16;139H6[10;36H[?12l[?25h[?25l0[10;36H[K[16;139H5[10;35H[?12l[?25h[?25l0[10;35H[K[16;139H4[10;34H[?12l[?25h[?25l[10;34H[K[16;139H3[10;33H[?12l[?25h[?25l[10;33H[K[16;139H2[10;32H[?12l[?25h[?25l0[10;32H[K[16;139H1[10;31H[?12l[?25h[?25l0[10;31H[K[16;139H0[10;30H[?12l[?25h[?25l0[10;30H[K[16;138H29[10;29H[?12l[?25h[?25l0[10;29H[K[16;139H8[10;28H[?12l[?25h[?25l0[10;28H[K[16;139H7[10;27H[?12l[?25h[?25l0[10;27H[K[16;139H6[10;26H[?12l[?25h[?25l0[10;26H[K[16;139H5[10;25H[?12l[?25h[?25l0[10;25H[K[16;139H4[10;24H[?12l[?25h[?25l0[10;24H[K[16;139H3[10;23H[?12l[?25h[?25l0[10;23H[K[16;139H2[10;22H[?12l[?25h[?25l0[10;22H[K[16;139H1[10;21H[?12l[?25h[?25l0[10;21H[K[16;139H0[10;20H[?12l[?25h[?25l[16;139H1[10;21H[?12l[?25h[?25l[10;20H[K[16;139H0[10;20H[?12l[?25h[?25l[10;19H[K[16;138H19[10;19H[?12l[?25h[?25l[10;18H[K[16;139H8[10;18H[?12l[?25h[?25l[10;17H[K[16;139H7[10;17H[?12l[?25h[?25l[10;16H[K[16;139H6[10;16H[?12l[?25h[?25l[10;15H[K[16;139H5[10;15H[?12l[?25h[?25l[10;14H[K[16;139H4[10;14H[?12l[?25h[?25l[10;13H[K[16;139H3[10;13H[?12l[?25h[?25l[10;12H[K[16;139H2[10;12H[?12l[?25h[?25l[10;11H[K[16;139H1[10;11H[?12l[?25h[?25l[10;10H[K[16;139H0[10;10H[?12l[?25h[?25l[10;9H[K[16;138H9 [10;9H[?12l[?25h[?25l[16;138H8[10;8H[?12l[?25h[?25l[10;7H[K[16;138H7[10;7H[?12l[?25h[?25l[10;6H[K[16;138H6[10;6H[?12l[?25h[?25l[10;5H[K[16;138H5[10;5H[?12l[?25h[?25l[10;4H[K[16;138H4[10;4H[?12l[?25h[?25l[10;3H[K[16;138H3[10;3H[?12l[?25h[?25l[34m>[m[10;2H[K[16;138H2[10;2H[?12l[?25h[?25l[10;1H[K[16;138H1[10;1H[?12l[?25h[?25l[94m~                                                                                                                                                       [m[16;135H9,32[9;32H[?12l[?25h[16;1H[K[9;31H[?25l[16;135H9,31[10CAll[9;31H[?12l[?25h[?25l[1;15r[15;1H
+[1;16r[15;1H[94m~                                                                                                                                                       [m[16;135H[K[16;135H9,31[10CBot[8;31H[?12l[?25h[?25l[?12l[?25h[?25l[16;138H0[8;30H[?12l[?25h[?25l[16;137H29[8;29H[?12l[?25h[?25l[16;138H8[8;28H[?12l[?25h[?25l[16;138H7[8;27H[?12l[?25h[?25l[16;138H6[8;26H[?12l[?25h[?25l[16;138H5[8;25H[?12l[?25h[?25l[16;138H4[8;24H[?12l[?25h[?25l[16;138H3[8;23H[?12l[?25h[?25l[16;138H2[8;22H[?12l[?25h[?25l[16;138H1[8;21H[?12l[?25h[?25l[16;138H0[8;20H[?12l[?25h[?25l[16;137H19[8;19H[?12l[?25h[?25l[16;138H8[8;18H[?12l[?25h[?25l[16;138H7[8;17H[?12l[?25h[?25l[16;138H6[8;16H[?12l[?25h[?25l[16;138H5[8;15H[?12l[?25h[?25l[16;138H4[8;14H[?12l[?25h[?25l[16;138H3[8;13H[?12l[?25h[?25l[16;138H2[8;12H[?12l[?25h[?25l[16;138H1[8;11H[?12l[?25h[?25l[16;138H0[8;10H[?12l[?25h[?25l[16;137H9 [8;9H[?12l[?25h[?25l[16;137H8[8;8H[?12l[?25h[?25l[16;137H7[8;7H[?12l[?25h[?25l[16;137H6[8;6H[?12l[?25h[?25l[16;137H5[8;5H[?12l[?25h[?25l[16;137H4[8;4H[?12l[?25h[?25l[16;137H3[8;3H[?12l[?25h[?25l[16;137H2[8;2H[?12l[?25h[?25l[16;137H1[8;1H[?12l[?25h[?25l[16;135H8,0-1[7;1H[?12l[?25h[?25l[16;135H7,1  [6;1H[?12l[?25h[?25l[16;135H6,0-1[5;1H[?12l[?25h[?25l[16;135H5,1  [4;1H[?12l[?25h[?25l[16;135H4[3;1H[?12l[?25h[?25l[16;135H3[2;1H[?12l[?25h[?25l[16;135H2[1;1H[?12l[?25h[?25l[1;15r[1;1H[L[1;16r[1;1HFinal Project For BIFX 552[16;135H[K[16;135H1,1[11CAll[1;1H[?12l[?25h[?25l[?12l[?25h[?25l[16;135H2[2;1H[?12l[?25h[?25l[16;135H3[3;1H[?12l[?25h[?25l[16;135H4[4;1H[?12l[?25h[?25l[16;135H5[5;1H[?12l[?25h[?25l[16;135H6,0-1[6;1H[?12l[?25h[?25l[16;135H7,1  [7;1H[?12l[?25h[?25l[16;135H8,0-1[8;1H[?12l[?25h[?25l[16;135H9,1  [9;1H[?12l[?25h[?25l[1;15r[15;1H
+[1;16r[15;1H[94m~                                                                                                                                                       [m[16;135H[K[16;135H9,1[11CBot[8;1H[?12l[?25h[?25l[16;137H2[8;2H[?12l[?25h[?25l[16;137H3[8;3H[?12l[?25h[?25l[16;137H4[8;4H[?12l[?25h[?25l[16;137H5[8;5H[?12l[?25h[?25l[16;137H6[8;6H[?12l[?25h[?25l[16;137H7[8;7H[?12l[?25h[?25l[16;137H8[8;8H[?12l[?25h[?25l[16;137H9[8;9H[?12l[?25h[?25l[16;137H10[8;10H[?12l[?25h[?25l[16;138H1[8;11H[?12l[?25h[?25l[16;138H2[8;12H[?12l[?25h[?25l[16;138H3[8;13H[?12l[?25h[?25l[16;138H4[8;14H[?12l[?25h[?25l[16;138H5[8;15H[?12l[?25h[?25l[16;138H6[8;16H[?12l[?25h[?25l[16;138H7[8;17H[?12l[?25h[?25l[16;138H8[8;18H[?12l[?25h[?25l[16;138H9[8;19H[?12l[?25h[?25l[16;137H20[8;20H[?12l[?25h[?25l[16;138H1[8;21H[?12l[?25h[?25l[16;135H8,0-1[7;1H[?12l[?25h[?25l[16;135H7,21 [6;21H[?12l[?25h[?25l[16;135H6,0-1[5;1H[?12l[?25h[?25l[16;135H7,21 [6;21H[?12l[?25h[?25l[16;135H8,0-1[7;1H[?12l[?25h[?25l[16;135H9,21 [8;21H[?12l[?25h[?25l[16;138H2[8;22H[?12l[?25h[?25l[16;138H3[8;23H[?12l[?25h[?25l[16;138H4[8;24H[?12l[?25h[?25l[16;138H5[8;25H[?12l[?25h[?25l[16;138H6[8;26H[?12l[?25h[?25l[16;138H7[8;27H[?12l[?25h[?25l[16;138H8[8;28H[?12l[?25h[?25l[16;138H9[8;29H[?12l[?25h[?25l[16;137H30[8;30H[?12l[?25h[?25l[16;138H1[8;31H[?12l[?25h[?25l[16;138H0[8;30H[?12l[?25h[?25l[16;138H1[8;31H[?12l[?25h[?25l[16;135H8,0-1[7;1H[?12l[?25h[?25l[16;135H7,31 [6;31H[?12l[?25h[?25l[16;135H6,0-1[5;1H[?12l[?25h[?25l[16;135H5,29 [4;29H[?12l[?25h[?25l[16;135H4,18[3;18H[?12l[?25h[?25l[16;135H3,31[2;31H[?12l[?25h[?25l[16;135H2,26[1;26H[?12l[?25h[?25l[1;15r[1;1H[L[1;16r[1;1HFinal Project For BIFX 552[16;135H[K[16;135H1,26[10CAll[1;26H[?12l[?25h[?25l[16;135H2[2;26H[?12l[?25h[?25l[16;135H3,31[3;31H[?12l[?25h[?25l[16;135H4,18[4;18H[?12l[?25h[?25l[16;135H5,29[5;29H[?12l[?25h[?25l[16;135H6,0-1[6;1H[?12l[?25h[?25l[16;135H7,31 [7;31H[?12l[?25h[?25l[16;135H8,0-1[8;1H[?12l[?25h[?25l[16;135H9,31 [9;31H[?12l[?25h[?25l[1;15r[15;1H
+[1;16r[15;1H[94m~                                                                                                                                                       [m[16;135H[K[16;135H9,31[10CBot[8;31H[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[16;138H0[8;30H[?12l[?25h[?25l[16;137H29[8;29H[?12l[?25h[?25l[16;138H8[8;28H[?12l[?25h[?25l[16;138H7[8;27H[?12l[?25h[?25l[16;138H6[8;26H[?12l[?25h[?25l[16;138H5[8;25H[?12l[?25h[?25l[16;138H4[8;24H[?12l[?25h[?25l[16;138H3[8;23H[?12l[?25h[?25l[16;138H2[8;22H[?12l[?25h[?25l[16;138H1[8;21H[?12l[?25h[?25l[16;138H0[8;20H[?12l[?25h[?25l[16;137H19[8;19H[?12l[?25h[?25l[16;138H8[8;18H[?12l[?25h[?25l[16;138H7[8;17H[?12l[?25h[?25l[16;138H6[8;16H[?12l[?25h[?25l[16;138H5[8;15H[?12l[?25h[?25l[16;138H4[8;14H[?12l[?25h[?25l[16;138H3[8;13H[?12l[?25h[?25l[16;138H2[8;12H[?12l[?25h[?25l[16;138H1[8;11H[?12l[?25h[?25l[16;138H0[8;10H[?12l[?25h[?25l[16;137H9 [8;9H[?12l[?25h[?25l[16;137H8[8;8H[?12l[?25h[?25l[16;137H7[8;7H[?12l[?25h[?25l[16;137H6[8;6H[?12l[?25h[?25l[16;137H5[8;5H[?12l[?25h[?25l[16;137H4[8;4H[?12l[?25h[?25l[16;137H3[8;3H[?12l[?25h[?25l[16;137H2[8;2H[?12l[?25h[?25l[16;137H1[8;1H[?12l[?25h[?25l[16;1H[1mrecording[m[16;135H[K[16;135H9,1[11CBot[8;1H[?12l[?25h[?25l[16;1H[1m--c INSERT[m [1m --recording[m[16;135H[K[16;135H9,1[11CBot[8;1H[?12l[?25h[16;1H[1mrecording [m[16;10H[K[8;1H[?25l[16;135H9,1[11CBot[8;1H[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25lte merge conflict from Copy[8;28H[K[8;1H[?12l[?25h[?25l[16;137H2[8;2H[?12l[?25h[?25l[16;137H3[8;3H[?12l[?25h[?25l[16;137H4[8;4H[?12l[?25h[?25l[16;137H5[8;5H[?12l[?25h[?25l[16;137H6[8;6H[?12l[?25h[?25l[16;137H7[8;7H[?12l[?25h[?25l[16;137H8[8;8H[?12l[?25h[?25l[16;137H9[8;9H[?12l[?25h[?25l[16;137H10[8;10H[?12l[?25h[?25l[16;138H1[8;11H[?12l[?25h[?25l[16;138H2[8;12H[?12l[?25h[?25l[16;138H3[8;13H[?12l[?25h[?25l[16;138H2[8;12H[?12l[?25h[?25l[16;138H1[8;11H[?12l[?25h[?25l[16;138H0[8;10H[?12l[?25h[?25l[16;137H9 [8;9H[?12l[?25h[?25l[16;137H8[8;8H[?12l[?25h[?25l[16;137H7[8;7H[?12l[?25h[?25l[16;137H6[8;6H[?12l[?25h[?25l[16;137H7[8;7H[?12l[?25h[?25l[16;137H8[8;8H[?12l[?25h[?25l[16;137H9[8;9H[?12l[?25h[?25l[16;137H10[8;10H[?12l[?25h[?25l[16;138H1[8;11H[?12l[?25h[?25l[16;138H2[8;12H[?12l[?25h[?25l[16;138H3[8;13H[?12l[?25h[?25l[16;138H4[8;14H[?12l[?25h[?25l[16;138H5[8;15H[?12l[?25h[?25l[16;138H6[8;16H[?12l[?25h[?25l[16;138H7[8;17H[?12l[?25h[?25l[16;138H8[8;18H[?12l[?25h[?25l[16;138H9[8;19H[?12l[?25h[?25l[16;137H20[8;20H[?12l[?25h[?25l[16;138H1[8;21H[?12l[?25h[?25l[16;138H2[8;22H[?12l[?25h[?25l[16;138H3[8;23H[?12l[?25h[?25l[16;138H4[8;24H[?12l[?25h[?25l[16;138H5[8;25H[?12l[?25h[?25l[16;138H6[8;26H[?12l[?25h[?25l[16;138H7[8;27H[?12l[?25h[?25l[16;138H6[8;26H[?12l[?25h[?25l[16;138H5[8;25H[?12l[?25h[?25l[16;138H4[8;24H[?12l[?25h[?25l[16;138H3[8;23H[?12l[?25h[?25l[16;138H2[8;22H[?12l[?25h[?25l[16;138H1[8;21H[?12l[?25h[?25l[16;138H0[8;20H[?12l[?25h[?25l[16;137H19[8;19H[?12l[?25h[?25l[16;138H8[8;18H[?12l[?25h[?25l[16;138H7[8;17H[?12l[?25h[?25l[16;138H6[8;16H[?12l[?25h[?25l[16;138H5[8;15H[?12l[?25h[?25l[16;138H4[8;14H[?12l[?25h[?25l[16;138H3[8;13H[?12l[?25h[?25l[16;138H2[8;12H[?12l[?25h[?25l[94m~                                                                                                                                                       [m[16;135H8,0-1[7;1H[?12l[?25h[?25l[1;15r[1;1H[L[1;16r[1;1HFinal Project For BIFX 552[16;135H[K[16;135H8,0-1[9CAll[8;1H[?12l[?25h[?25l[?12l[?25h[?25l[16;1H"README.md"[16;135H[K[16;13H8L, 196C written
+[?1l>[?12l[?25h[?1049lbash-4.2$ cat README.md 
+Final Project For BIFX 552
+Project started 12-01-2019
+TODO: ask sequencing center abt adapters
+This is a new edit
+This line was added from Copy
+
+Merge Conflict example from original FinalProject
+
+bash-4.2$ git status
+# On branch master
+# You have unmerged paths.
+#   (fix conflicts and run "git commit")
+#
+# Unmerged paths:
+#   (use "git add <file>..." to mark resolution)
+#
+#	[31mboth modified:      README.md[m
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	[31mchap5.txt[m
+no changes added to commit (use "git add" and/or "git commit -a")
+bash-4.2$ ##Stage file
+bash-4.2$ git agg[K[Kdd README.md 
+bash-4.2$ git status
+# On branch master
+# All conflicts fixed but you are still merging.
+#   (use "git commit" to conclude merge)
+#
+# Changes to be committed:
+#
+#	[32mmodified:   README.md[m
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	[31mchap5.txt[m
+bash-4.2$ git commit -m "Merge conflict resolved"
+[master 29c2577] Merge conflict resolved
+bash-4.2$ git ststs[K[K[Katus
+# On branch master
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	[31mchap5.txt[m
+nothing added to commit but untracked files present (use "git add" to track)
+bash-4.2$ ##Push to master
+bash-4.2$ git push origin master
+Counting objects: 10, done.
+Delta compression using up to 16 threads.
+Compressing objects:  16% (1/6)   Compressing objects:  33% (2/6)   Compressing objects:  50% (3/6)   Compressing objects:  66% (4/6)   Compressing objects:  83% (5/6)   Compressing objects: 100% (6/6)   Compressing objects: 100% (6/6), done.
+Writing objects:  16% (1/6)   Writing objects:  33% (2/6)   Writing objects:  50% (3/6)   Writing objects:  66% (4/6)   Writing objects:  83% (5/6)   Writing objects: 100% (6/6)   Writing objects: 100% (6/6), 737 bytes | 0 bytes/s, done.
+Total 6 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/2)[Kremote: Resolving deltas: 100% (2/2)[Kremote: Resolving deltas: 100% (2/2), completed with 1 local object.[K
+To git@github.com:LivStanley/FinalProject.git
+   2c438d5..29c2577  master -> master
+bash-4.2$ ##Pull new merge re=[K[K[K[K[K[K[K[K[K[K[K[K[Kmerge resolu[Kution to Copyu[K
+bash-4.2$ cd ~/CloneAndCompile/FinalProject_Copy/
+bash-4.2$ git pu;;[K[Kll origin master
+remote: Enumerating objects: 10, done.[K
+remote: Counting objects:  10% (1/10)[Kremote: Counting objects:  20% (2/10)[Kremote: Counting objects:  30% (3/10)[Kremote: Counting objects:  40% (4/10)[Kremote: Counting objects:  50% (5/10)[Kremote: Counting objects:  60% (6/10)[Kremote: Counting objects:  70% (7/10)[Kremote: Counting objects:  80% (8/10)[Kremote: Counting objects:  90% (9/10)[Kremote: Counting objects: 100% (10/10)[Kremote: Counting objects: 100% (10/10), done.[K
+remote: Compressing objects:  25% (1/4)[Kremote: Compressing objects:  50% (2/4)[Kremote: Compressing objects:  75% (3/4)[Kremote: Compressing objects: 100% (4/4)[Kremote: Compressing objects: 100% (4/4), done.[K
+remote: Total 6 (delta 2), reused 6 (delta 2), pack-reused 0[K
+Unpacking objects:  16% (1/6)   Unpacking objects:  33% (2/6)   Unpacking objects:  50% (3/6)   Unpacking objects:  66% (4/6)   Unpacking objects:  83% (5/6)   Unpacking objects: 100% (6/6)   Unpacking objects: 100% (6/6), done.
+From github.com:LivStanley/FinalProject
+ * branch            master     -> FETCH_HEAD
+Updating 2c438d5..29c2577
+Fast-forward
+ README.md | 4 [32m+++[m[31m-[m
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+bash-4.2$ ##Check with [K[K[K[K[Klog
+bash-4.2$ git log
+[?1h=[33mcommit 29c2577b3cfb04983c338eb1b23c5c3a4676cadc[m[m
+Merge: 8370f4c 2c438d5[m
+Author: LivStanley <ogs1@hood.edu>[m
+Date:   Wed Dec 4 03:02:29 2019 -0500[m
+[m
+    Merge conflict resolved[m
+[m
+[33mcommit 8370f4c3ef092ce216d6a73518890e59b478bc3c[m[m
+Author: LivStanley <ogs1@hood.edu>[m
+Date:   Wed Dec 4 02:36:46 2019 -0500[m
+[m
+    Merge Conflict example from original FinalProject[m
+[m
+[33mcommit 2c438d5f397524161e73f9300c3589aba0c00930[m[m
+Author: LivStanley <ogs1@hood.edu>[m
+:[K[K[?1l>bash-4.2$ git log --graph
+[?1h=*   [33mcommit 29c2577b3cfb04983c338eb1b23c5c3a4676cadc[m[m
+[31m|[m[32m\[m  Merge: 8370f4c 2c438d5[m
+[31m|[m [32m|[m Author: LivStanley <ogs1@hood.edu>[m
+[31m|[m [32m|[m Date:   Wed Dec 4 03:02:29 2019 -0500[m
+[31m|[m [32m|[m [m
+[31m|[m [32m|[m     Merge conflict resolved[m
+[31m|[m [32m|[m   [m
+[31m|[m * [33mcommit 2c438d5f397524161e73f9300c3589aba0c00930[m[m
+[31m|[m [32m|[m Author: LivStanley <ogs1@hood.edu>[m
+[31m|[m [32m|[m Date:   Wed Dec 4 02:28:59 2019 -0500[m
+[31m|[m [32m|[m [m
+[31m|[m [32m|[m     Merge Conflict example[m
+[31m|[m [32m|[m   [m
+* [32m|[m [33mcommit 8370f4c3ef092ce216d6a73518890e59b478bc3c[m[m
+[32m|[m[32m/[m  Author: LivStanley <ogs1@hood.edu>[m
+:[K[K[?1l>bash-4.2$ ##Practice retrie[K[K[K[Kvo[K[Kcovering d[Kfile versions
+bash-4.2$ d[Kecho "Accidental overwrite" > README.md 
+bash-4.2$ cat README.md 
+Accidental overwrite
+bash-4.2$ ##Check s[Kstatus
+bash-4.2$ git status
+# On branch master
+# Your branch is ahead of 'origin/master' by 2 commits.
+#   (use "git push" to publish your local commits)
+#
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	[31mmodified:   README.md[m
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+bash-4.2$ ##Restore file
+bash-4.2$ git checkout -- README.md 
+bash-4.2$ cat README.md 
+Final Project For BIFX 552
+Project started 12-01-2019
+TODO: ask sequencing center abt adapters
+This is a new edit
+This line was added from Copy
+
+Merge Conflict example from original FinalProject
+
+bash-4.2$ ##View past commits with git log
+bash-4.2$ git log -- pr[K[K[Kpretty=oneline == [K[K[K--abbrev-commit -n 3
+[?1h=[33m29c2577[m Merge conflict resolved[m
+[33m8370f4c[m Merge Conflict example from original FinalProject[m
+[33m2c438d5[m Merge Conflict example[m
+[K[?1l>bash-4.2$ R[K#restore README.md from 'Merg [K[Kge conflict exampe[Kle"
+bash-4.2$ git checkout 2c438d5 -- README.md 
+bash-4.2$ cat README.md 
+Final Project For BIFX 552
+Project started 12-01-2019
+TODO: ask sequencing center abt adapters
+This is a new edit
+This line was added from Copy
+Create merge conflict from Copy
+bash-4.2$ ##Restore most recent commit
+bash-4.2$ git checkout 29c2577 -- README.md 
+bash-4.2$ cat README.md 
+Final Project For BIFX 552
+Project started 12-01-2019
+TODO: ask sequencing center abt adapters
+This is a new edit
+This line was added from Copy
+
+Merge Conflict example from original FinalProject
+
+bash-4.2$ git s[K[K stat[Ka[Ktus
+# On branch master
+# Your branch is ahead of 'origin/master' by 2 commits.
+#   (use "git push" to publish your local commits)
+#
+nothing to commit, working directory clean
+bash-4.2$ git push origin master
+Everything up-to-date
+bash-4.2$ ##Practici[Ke with Git S[K[K[K[K[Kgit stash
+bash-4.2$ exit
+exit
+
+Script done on Wed 04 Dec 2019 03:16:12 AM EST
+Script started on Wed 04 Dec 2019 02:51:38 PM EST
+[?1034hbash-4.2$ ####Practice with git stash
+bash-4.2$ #A[K#Add a line to R[Kreadme
+bash-4.2$ echo "This is for practice with git stac[Ksh" >> R
+R/          Rplots.pdf  
+bash-4.2$ echo "This is for practice with git stash" >> Rcd[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcd FinalProject/
+bash-4.2$ echo "R[KThis is for practice wti[K[Kith git stash [K" >> README.md 
+bash-4.2$ git status
+# On branch master
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	[31mmodified:   README.md[m
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	[31mchap5.txt[m
+no changes added to commit (use "git add" and/or "git commit -a")
+bash-4.2$ ##K[KStash change 
+bash-4.2$ git stash
+Saved working directory and index state WIP on master: 29c2577 Merge conflict resolved
+HEAD is now at 29c2577 Merge conflict resolved
+bash-4.2$ s[K##Reapply changes we stashed
+bash-4.2$ d[Kgit stash pops[K
+# On branch master
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	[31mmodified:   README.md[m
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	[31mchap5.txt[m
+no changes added to commit (use "git add" and/or "git commit -a")
+Dropped refs/stash@{0} (1376c310446edee52f909a37eb41b65b2e3e96d7)
+bash-4.2$ ##Use git diff to compare difference between two commits
+bash-4.2$ log[K[K[Kgit log [K[K[K[K[K[K[K[Kgit log --pretty=oneline --abbrev-commit
+[?1h=[33m29c2577[m Merge conflict resolved[m
+[33m8370f4c[m Merge Conflict example from original FinalProject[m
+[33m2c438d5[m Merge Conflict example[m
+[33mffb7bd7[m Added a line from Copy[m
+[33m2340c34[m added a line[m
+[33med29619[m Added .gitignore[m
+[33mcdd8717[m added markdown extensions to README files[m
+[33m3226c88[m Added project start date to README[m
+[33m1c1f528[m initial import[m
+[K[?1l>bash-4.2$ ##Use git diff to compare head to commit 2c438d5
+bash-4.2$ git diff 2c438d5
+[?1h=[1mdiff --git a/README.md b/README.md[m[m
+[1mindex dcdfb4d..169d160 100644[m[m
+[1m--- a/README.md[m[m
+[1m+++ b/README.md[m[m
+[36m@@ -3,4 +3,7 @@[m [mProject started 12-01-2019[m[m
+ TODO: ask sequencing center abt adapters[m[m
+ This is a new edit[m[m
+ This line was added from Copy[m[m
+[31m-Create merge conflict from Copy[m[m
+[32m+[m[m
+[32m+[m[32mMerge Conflict example from original FinalProject[m[m
+[32m+[m[m
+[32m+[m[32mThis is for practice with git stash[m[m
+[K[?1l>bash-4.2$ git diff[K[K[K[K[K[K[K[K##use t[Kgit diff to compare two commits
+bash-4.2$ git diff 2c438d5 29c2577 README.md 
+[?1h=[1mdiff --git a/README.md b/README.md[m[m
+[1mindex dcdfb4d..f49afab 100644[m[m
+[1m--- a/README.md[m[m
+[1m+++ b/README.md[m[m
+[36m@@ -3,4 +3,6 @@[m [mProject started 12-01-2019[m[m
+ TODO: ask sequencing center abt adapters[m[m
+ This is a new edit[m[m
+ This line was added from Copy[m[m
+[31m-Create merge conflict from Copy[m[m
+[32m+[m[m
+[32m+[m[32mMerge Conflict example from original FinalProject[m[m
+[41m+[m[m
+[K[?1l>bash-4.2$ ##Editing[K[K[K[K[K[K[Kundoing[K[K[King and editing commits with git commit --ammend
+bash-4.2$ git commit -a -m "thsi[K[Ks[Kis is [K[K[K[K[K[K[K[Koops!"
+bash: !": event not found
+bash-4.2$ ##undoing and editing commits with git commit --ammend[C[C[C[C[C[C[C[C[C[C[Kgit commit -a -m "oops"
+[master 65187ae] oops
+ 1 file changed, 1 insertion(+)
+bash-4.2$ git o[Kcommit --ammend
+error: unknown option `ammend'
+usage: git commit [options] [--] <pathspec>...
+
+    -q, --quiet           suppress summary after successful commit
+    -v, --verbose         show diff in commit message template
+
+Commit message options
+    -F, --file <file>     read message from file
+    --author <author>     override author for commit
+    --date <date>         override date for commit
+    -m, --message <message>
+                          commit message
+    -c, --reedit-message <commit>
+                          reuse and edit message from specified commit
+    -C, --reuse-message <commit>
+                          reuse message from specified commit
+    --fixup <commit>      use autosquash formatted message to fixup specified commit
+    --squash <commit>     use autosquash formatted message to squash specified commit
+    --reset-author        the commit is authored by me now (used with -C/-c/--amend)
+    -s, --signoff         add Signed-off-by:
+    -t, --template <file>
+                          use specified template file
+    -e, --edit            force edit of commit
+    --cleanup <default>   how to strip spaces and #comments from message
+    --status              include status in commit message template
+    -S, --gpg-sign[=<key id>]
+                          GPG sign commit
+
+Commit contents options
+    -a, --all             commit all changed files
+    -i, --include         add specified files to index for commit
+    --interactive         interactively add files
+    -p, --patch           interactively add changes
+    -o, --only            commit only specified files
+    -n, --no-verify       bypass pre-commit hook
+    --dry-run             show what would be committed
+    --short               show status concisely
+    --branch              show branch information
+    --porcelain           machine-readable output
+    --long                show status in long format (default)
+    -z, --null            terminate entries with NUL
+    --amend               amend previous commit
+    --no-post-rewrite     bypass post-rewrite hook
+    -u, --untracked-files[=<mode>]
+                          show untracked files, optional modes: all, normal, no. (Default: all)
+
+bash-4.2$ git commit --ammend[1Pend[C[C[C\[K
+[?1049h[?1h=[2;1H▽[6n[2;1H  [1;1H]11;?[1;16r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[16;1H".git/COMMIT_EDITMSG" 14L, 365C[>c[1;1H[38;5;130moops[m
+
+[34m# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch [m[35mmaster[m
+[34m# [m[35mChanges to be committed:[m
+[34m#   (use "git reset HEAD^1 <file>..." to unstage)
+#
+#       [m[32mmodified[m[34m: [m[31m  README.md[m
+[34m#
+# [m[35mUntracked files:[m
+[34m#   (use "git add <file>..." to include in what will be committed)
+#
+#       [m[31mchap5.txt[m
+[94m~                                                                                                                                                       [m[16;135H1,1[11CAll[1;1H[?12l[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?25l[16;1H[1m-- INSERT --[m[16;13H[K[16;135H1,1[11CAll[1;1H[?12l[?25h[?25l[38;5;130mioops[m[16;137H2[1;2H[?12l[?25h[?25l[38;5;130moops[m[1;5H[K[16;137H1[1;1H[?12l[?25h[?25l[16;137H2[1;2H[?12l[?25h[?25l[16;137H3[1;3H[?12l[?25h[?25l[16;137H4[1;4H[?12l[?25h[?25l[16;137H5[1;5H[?12l[?25h[?25l[1;4H[K[16;137H4[1;4H[?12l[?25h[?25l[1;3H[K[16;137H3[1;3H[?12l[?25h[?25l[1;2H[K[16;137H2[1;2H[?12l[?25h[?25l[1;1H[K[16;137H1[1;1H[?12l[?25h[?25l[38;5;130mf[m[16;137H2[1;2H[?12l[?25h[?25l[38;5;130mi[m[16;137H3[1;3H[?12l[?25h[?25l[38;5;130mx[m[16;137H4[1;4H[?12l[?25h[?25l[38;5;130me[m[16;137H5[1;5H[?12l[?25h[?25l[38;5;130md[m[16;137H6[1;6H[?12l[?25h[?25l[38;5;130m![m[16;137H7[1;7H[?12l[?25h[?25l[1;6H[K[16;137H6[1;6H[?12l[?25h[16;1H[K[1;5H[?25l[16;135H1,5[11CAll[1;5H[?12l[?25h[?25l[16;1H".git/COMMIT_EDITMSG"[16;135H[K[16;23H14L, 366C written
+[97m[41mE137: Viminfo file is not writable: /home/ogs1/.viminfo[m
+[32mPress ENTER or type command to continue[?12l[?25h
+
+[m[?1l>[?1049l[master abec422] fixed
+ 1 file changed, 1 insertion(+)
+bash-4.2$ ##Woer[K[Krking with branches
+bash-4.2$ ##Create a new p[Kbranch
+bash-4.2$ git p[Kbranch [K[Kh readme-changes
+bash-4.2$ git branch
+* [32mmaster[m
+  readme-changes[m
+bash-4.2$ ##Checkout readme-changes
+bash-4.2$ git chechout readme-changes
+git: 'chechout' is not a git command. See 'git --help'.
+
+Did you mean this?
+	checkout
+bash-4.2$ git chechout readme-changes[1P[1@k
+Switched to branch 'readme-changes'
+bash-4.2$ git br[K[K[K[K[K[K##Verify we are on the readme-changes branck[Kh
+bash-4.2$ git branck[Kh
+  master[m
+* [32mreadme-changes[m
+bash-4.2$ ##Edit readme
+bash-4.2$ echo "This is branch practicc[Ke"[C[C[C[C[1@ [1@f[1@o[1@r[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C >> Rea[K[KEADME.md 
+bash-4.2$ k[K##Commit changes to branch
+bash-4.2$ git commit -a -m "br[K[Kbranch practice"
+[readme-changes 2e5c8e7] branch practice
+ 1 file changed, 1 insertion(+)
+bash-4.2$ git log --abbrev -[K[K-commit -- [Kpretty=oneline -n 3
+[?1h=[33m2e5c8e7[m branch practice[m
+[33mabec422[m fixed[m
+[33m29c2577[m Merge conflict resolved[m
+[K[?1l>bash-4.2$ ##Move back to branch master
+bash-4.2$ git checkout master
+Switched to branch 'master'
+bash-4.2$ ##view commit log
+bash-4.2$ git log --abbrev- [Kcommit --pretty=oneline n=[K-3
+fatal: ambiguous argument 'n-3': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+bash-4.2$ git log --abbrev-commit --pretty=oneline n-3[C 3[C
+fatal: ambiguous argument 'n-': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+bash-4.2$ git log --abbrev-commit --pretty=oneline n- 3[C[1P 3[1P 3- 3n 3[C[C
+[?1h=[33mabec422[m fixed[m
+[33m29c2577[m Merge conflict resolved[m
+[33m8370f4c[m Merge Conflict example from original FinalProject[m
+[K[?1l>bash-4.2$ touch [K[K[K[K[K[K##Add a new file to master
+bash-4.2$ touch adapters.fa
+bash-4.2$ ls
+adapters.fa  chap5.txt	data  README.md
+bash-4.2$ ##Stg[Kage and o[Kcm[Kommit
+bash-4.2$ git status
+# On branch master
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	[31madapters.fa[m
+#	[31mchap5.txt[m
+nothing added to commit but untracked files present (use "git add" to track)
+bash-4.2$ git add adapters.fa 
+bash-4.2$ git commit -a -m "new file adapters.fa"
+[master 5fc2b46] new file adapters.fa
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 adapters.fa
+bash-4.2$ ##View branches with git log
+bash-4.2$ git log --abbrev-commit --pretty=oneline =[K--graph -- branches[K[K[K[K[K[K[K[K[Kbranches -n22[K
+[?1h=* [33m5fc2b46[m new file adapters.fa[m
+[31m|[m * [33m2e5c8e7[m branch practice[m
+[31m|[m[31m/[m  [m
+[K[?1l>bash-4.2$ \[K##Merge branches
+bash-4.2$ git [K[K[K[K##Check wit[K[Khich bran [Kch you are on
+bash-4.2$ git branch
+* [32mmaster[m
+  readme-changes[m
+bash-4.2$ ##On the deisred branch, [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[KMerge on [Kto the master branch
+bash-4.2$ git merge readme-changes
+[?1049h[?1h=[2;1H▽[6n[2;1H  [1;1H]11;?[1;16r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[16;1H".git/MERGE_MSG" 7L, 257C[>c[1;1H[38;5;130mMerge branch 'readme-changes'[m
+
+[34m# Please enter a commit message to explain why this merge is necessary,
+# especially if it merges an updated upstream into a topic branch.
+#
+# Lines starting with '#' will be ignored, and an empty message aborts
+# the commit.[m
+[94m~                                                                                                                                                       [9;1H~                                                                                                                                                       [10;1H~                                                                                                                                                       [11;1H~                                                                                                                                                       [12;1H~                                                                                                                                                       [13;1H~                                                                                                                                                       [14;1H~                                                                                                                                                       [15;1H~                                                                                                                                                       [m[16;135H1,1[11CAll[1;1H[?12l[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?25l[16;135H2,0-1[2;1H[?12l[?25h[?25l[16;135H3,1  [3;1H[?12l[?25h[?25l[16;135H4[4;1H[?12l[?25h[?25l[16;135H5[5;1H[?12l[?25h[?25l[16;135H6[6;1H[?12l[?25h[?25l[16;135H7[7;1H[?12l[?25h[?25l[16;135H6,70[6;70H[?12l[?25h[?25l[6;70H[K[16;137H69[6;69H[?12l[?25h[?25l[6;69H[K[16;138H8[6;68H[?12l[?25h[?25l[6;68H[K[16;138H7[6;67H[?12l[?25h[?25l[6;67H[K[16;138H6[6;66H[?12l[?25h[?25l[6;66H[K[16;138H5[6;65H[?12l[?25h[?25l[16;138H4[6;64H[?12l[?25h[?25l[16;18H[K[16;18H7L, 252C written
+[97m[41mE137: Viminfo file is not writable: /home/ogs1/.viminfo[m
+[32mPress ENTER or type command to continue[?12l[?25hZZ  
+
+[m[?1l>[?1049lMerge made by the 'recursive' strategy.
+ README.md | 1 [32m+[m
+ 1 file changed, 1 insertion(+)
+bash-4.2$ ##View merge
+bash-4.2$ git log --abbrev0co[K[K[Ko[K-commiut[K[Kt --pretty=oneline 00[K[K--graoh[K[Kph --branches -n 3
+[?1h=*   [33m2520c61[m Merge branch 'readme-changes'[m
+[31m|[m[32m\[m  [m
+[31m|[m * [33m2e5c8e7[m branch practice[m
+* [32m|[m [33m5fc2b46[m new file adapters.fa[m
+[32m|[m[32m/[m  [m
+[K[?1l>bash-4.2$ ##View ento=[K[Kire git history
+bash-4.2$ git log 00[K[K[K[K[K[K[K[K[K[K##View entire git history[C[C[C[C[C[C[C[C[C[Cgit log --abbrev-commit --pretty=oneline --graph --branches -n 3[K[K[K[K[K
+[?1h=*   [33m2520c61[m Merge branch 'readme-changes'[m
+[31m|[m[32m\[m  [m
+[31m|[m * [33m2e5c8e7[m branch practice[m
+* [32m|[m [33m5fc2b46[m new file adapters.fa[m
+[32m|[m[32m/[m  [m
+* [33mabec422[m fixed[m
+*   [33m29c2577[m Merge conflict resolved[m
+[33m|[m[34m\[m  [m
+[33m|[m * [33m2c438d5[m Merge Conflict example[m
+* [34m|[m [33m8370f4c[m Merge Conflict example from original FinalProject[m
+[34m|[m[34m/[m  [m
+* [33mffb7bd7[m Added a line from Copy[m
+* [33m2340c34[m added a line[m
+* [33med29619[m Added .gitignore[m
+* [33mcdd8717[m added markdown extensions to README files[m
+:[K[K[?1l>bash-4.2$ ##View all branches including hiddne [K[K[Ken remote branches
+bash-4.2$ git branch --all
+* [32mmaster[m
+  readme-changes[m
+  [31mremotes/origin/master[m
+bash-4.2$ ex[K[Kexit
+exit
+
+Script done on Wed 04 Dec 2019 03:42:09 PM EST
+Script started on Wed 04 Dec 2019 08:15:01 PM EST
+[?1034hbash-4.2$ ##Practice with remote[K[K[K[K[K[Kbranck[Khes and remotes
+bash-4.2$ ##Move to FinalProject_Copy directory
+bash-4.2$ cd ~C[K/CloneAndCompile/FinalProject_Copy/
+bash-4.2$ ##Move to [K[K[K[K[K[K[Kake a new-methd[Kods branch
+bash-4.2$ git[K[K[Kgit branch new-methods
+bash-4.2$ git branch
+* [32mmaster[m
+  new-methods[m
+bash-4.2$ git chekc[K[Kckout new-methods
+Switched to branch 'new-methods'
+bash-4.2$ ##Make some new commits
+bash-4.2$ git [K[K[K[Ktouch practive[K[K[K[K[Kc-w[K[Ktice-with-[K[K[K[K[K[K[K[K[K[K[K[K[K[Kremote-branches.txt
+bash-4.2$ ls
+data  README.md  remote-branches.txt
+bash-4.2$ echo "Practive[K[Kce with remote branch[Khes" >> remote-branches.txt 
+bash-4.2$ git status
+# On branch new-methods
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	[31mremote-branches.txt[m
+nothing added to commit but untracked files present (use "git add" to track)
+bash-4.2$ git add remote-branches.txt 
+bash-4.2$ git status
+# On branch new-methods
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	[32mnew file:   remote-branches.txt[m
+#
+bash-4.2$ c[Kgit commit -a -m "Practice with [K[K[K[K[K[K[K[K[K[K[K[K[K[Kcommits for remote branch"
+[new-methods 93cca04] commits for remote branch
+ 1 file changed, 1 insertion(+)
+ create mode 100644 remote-branches.txt
+bash-4.2$ ##Push cm[Kommits to central t[Krepositoy[Kry
+bash-4.2$ git push new-methods[C new-methodso new-methodsr new-methodsi new-methodsg new-methodsi new-methodsn new-methods[C[C[C[C[C[C[C[C[C[C[C[C
+Counting objects: 4, done.
+Delta compression using up to 16 threads.
+Compressing objects:  50% (1/2)   Compressing objects: 100% (2/2)   Compressing objects: 100% (2/2), done.
+Writing objects:  33% (1/3)   Writing objects:  66% (2/3)   Writing objects: 100% (3/3)   Writing objects: 100% (3/3), 314 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+remote: 
+remote: Create a pull request for 'new-methods' on GitHub by visiting:[K
+remote:      https://github.com/LivStanley/FinalProject/pull/new/new-methods[K
+remote: 
+To git@github.com:LivStanley/FinalProject
+ * [new branch]      new-methods -> new-methods
+bash-4.2$ ##Move back to origional repository and fetch new branch
+bash-4.2$ cd ~/FinalProject/
+bash-4.2$ git fetch origin
+remote: Enumerating objects: 4, done.[K
+remote: Counting objects:  25% (1/4)[Kremote: Counting objects:  50% (2/4)[Kremote: Counting objects:  75% (3/4)[Kremote: Counting objects: 100% (4/4)[Kremote: Counting objects: 100% (4/4), done.[K
+remote: Compressing objects: 100% (1/1)[Kremote: Compressing objects: 100% (1/1), done.[K
+remote: Total 3 (delta 1), reused 3 (delta 1), pack-reused 0[K
+Unpacking objects:  33% (1/3)   Unpacking objects:  66% (2/3)   Unpacking objects: 100% (3/3)   Unpacking objects: 100% (3/3), done.
+From github.com:LivStanley/FinalProject
+ * [new branch]      new-methods -> origin/new-methods
+bash-4.2$ git branch --all
+* [32mmaster[m
+  readme-changes[m
+  [31mremotes/origin/master[m
+  [31mremotes/origin/new-methods[m
+bash-4.2$ # Please enter a commit message to explain why this merge is necessary,
+bash-4.2$ # especially if it merges an updated upstream into a topic branch.
+bash-4.2$ #
+bash-4.2$ # Lines starting with '#' will be ignored, and an empty message a
+bash-4.2$ # the commit.[K[K[K[K[K[K[K[K[K[K[K[K[K##[K[Koops
+bash: oops: command not found
+bash-4.2$ oops# Lines starting with '#' will be ignored, and an empty message a[C[C[C[C[C[C[C[C[C[C[C[K especially if it merges an updated upstream into a topic branch.[C[C[C[C[C[C[C[C[C[C[C[CPlease enter a commit message to explain why this merge is necessary,[C[C[C[C[C[C[C[C[C[Cgit branch --all[K[C[C[C[C[C[C[C[C[C[C# Please enter a commit message to explain why this merge is necessary,[C[C[C[C[C[C[C[C[C[C[C[C[5Pespecially if it merges an updated upstream into a topic branch.[C[C[C[C[C[C[C[C[C[C[C[K Lines starting with '#' will be ignored, and an empty message a[C[C[C[C[C[C[C[C[C[Coops[K[Koops# Lines starting with '#' will be ignored, and an empty message a[C[C[C[C[C[C[C[C[C[C[C[K especially if it merges an updated upstream into a topic branch.[C[C[C[C[C[C[C[C[C[C[C[CPlease enter a commit message to explain why this merge is necessary,[C[C[C[C[C[C[C[C[C[Cgit branch --all[Kfetch origin[C[C[C[C[C[C[C[C[C[Ccd ~/FinalProject/[C[C[C[C[C[C[C[C[C[C[2Pgit fetch originbranch --all
+* [32mmaster[m
+  readme-changes[m
+  [31mremotes/origin/master[m
+  [31mremotes/origin/new-methods[m
+bash-4.2$ ##Dev[K[K[KMake changes to new=[K-methods before merging to master
+bash-4.2$ ##Make a new branch that starts from new-methods
+bash-4.2$ git checkout -b new met[K[K[K[K-methods origin/new-methods.[K
+Branch new-methods set up to track remote branch new-methods from origin.
+Switched to a new branch 'new-methods'
+bash-4.2$ echo "\\[K[K[K" [Kpractice with remote branches[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kls
+chap5.txt  data  README.md  remote-branches.txt
+bash-4.2$ echo "sm[K[Kmore commits from origional FinalProject"[1P[1P[1P[1P[C[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C >> remote-branches.txt 
+bash-4.2$ git o[K[K[K[K[K##make commit[Kt and push
+bash-4.2$ ec[K[Kgit commit -am "More practive wi[K[K[K[K[Kce with remote branches"
+[new-methods b8da1d2] More practice with remote branches
+ 1 file changed, 1 insertion(+)
+bash-4.2$ git push
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Counting objects: 17, done.
+Delta compression using up to 16 threads.
+Compressing objects:   7% (1/13)   Compressing objects:  15% (2/13)   Compressing objects:  23% (3/13)   Compressing objects:  30% (4/13)   Compressing objects:  38% (5/13)   Compressing objects:  46% (6/13)   Compressing objects:  53% (7/13)   Compressing objects:  61% (8/13)   Compressing objects:  69% (9/13)   Compressing objects:  76% (10/13)   Compressing objects:  84% (11/13)   Compressing objects:  92% (12/13)   Compressing objects: 100% (13/13)   Compressing objects: 100% (13/13), done.
+Writing objects:   7% (1/13)   Writing objects:  15% (2/13)   Writing objects:  23% (3/13)   Writing objects:  30% (4/13)   Writing objects:  38% (5/13)   Writing objects:  46% (6/13)   Writing objects:  53% (7/13)   Writing objects:  61% (8/13)   Writing objects:  69% (9/13)   Writing objects:  76% (10/13)   Writing objects:  84% (11/13)   Writing objects:  92% (12/13)   Writing objects: 100% (13/13)   Writing objects: 100% (13/13), 1.41 KiB | 0 bytes/s, done.
+Total 13 (delta 5), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/5)[Kremote: Resolving deltas:  20% (1/5)[Kremote: Resolving deltas:  40% (2/5)[Kremote: Resolving deltas:  60% (3/5)[Kremote: Resolving deltas: 100% (5/5)[Kremote: Resolving deltas: 100% (5/5), completed with 2 local objects.[K
+To git@github.com:LivStanley/FinalProject.git
+   29c2577..2520c61  master -> master
+   93cca04..b8da1d2  new-methods -> new-methods
+bash-4.2$ ##Merge into master branch
+bash-4.2$ git checkout master
+Switched to branch 'master'
+bash-4.2$ git merge new-methods
+[?1049h[?1h=[2;1H▽[6n[2;1H  [1;1H]11;?[1;16r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[16;1H".git/MERGE_MSG" 7L, 254C[>c[1;1H[38;5;130mMerge branch 'new-methods'[m
+
+[34m# Please enter a commit message to explain why this merge is necessary,
+# especially if it merges an updated upstream into a topic branch.
+#
+# Lines starting with '#' will be ignored, and an empty message aborts
+# the commit.[m
+[94m~                                                                                                                                                       [9;1H~                                                                                                                                                       [10;1H~                                                                                                                                                       [11;1H~                                                                                                                                                       [12;1H~                                                                                                                                                       [13;1H~                                                                                                                                                       [14;1H~                                                                                                                                                       [15;1H~                                                                                                                                                       [m[16;135H1,1[11CAll[1;1H[?12l[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?25l[16;137H2[1;2H[?12l[?25h[?25l[16;137H3[1;3H[?12l[?25h[?25l[16;137H2[1;2H[?12l[?25h[?25l[16;137H1[1;1H[?12l[?25h[?25l[16;1H[1m-- INSERT --[m[16;13H[K[16;135H1,1[11CAll[1;1H[?12l[?25h[?25l[16;137H2[1;2H[?12l[?25h[?25l[16;137H3[1;3H[?12l[?25h[?25l[16;137H4[1;4H[?12l[?25h[?25l[16;137H5[1;5H[?12l[?25h[?25l[16;137H6[1;6H[?12l[?25h[?25l[16;137H7[1;7H[?12l[?25h[?25l[16;137H8[1;8H[?12l[?25h[?25l[16;137H9[1;9H[?12l[?25h[?25l[16;137H10[1;10H[?12l[?25h[?25l[16;138H1[1;11H[?12l[?25h[?25l[16;138H2[1;12H[?12l[?25h[?25l[16;138H3[1;13H[?12l[?25h[?25l[16;138H4[1;14H[?12l[?25h[?25l[16;138H5[1;15H[?12l[?25h[?25l[16;138H6[1;16H[?12l[?25h[?25l[16;138H7[1;17H[?12l[?25h[?25l[16;138H8[1;18H[?12l[?25h[?25l[16;138H9[1;19H[?12l[?25h[?25l[16;137H20[1;20H[?12l[?25h[?25l[16;138H1[1;21H[?12l[?25h[?25l[16;138H2[1;22H[?12l[?25h[?25l[16;138H3[1;23H[?12l[?25h[?25l[16;138H4[1;24H[?12l[?25h[?25l[16;138H5[1;25H[?12l[?25h[?25l[16;138H6[1;26H[?12l[?25h[?25l[16;138H7[1;27H[?12l[?25h[?25l[1;26H[K[16;138H6[1;26H[?12l[?25h[?25l[1;25H[K[16;138H5[1;25H[?12l[?25h[?25l[1;24H[K[16;138H4[1;24H[?12l[?25h[?25l[1;23H[K[16;138H3[1;23H[?12l[?25h[?25l[1;22H[K[16;138H2[1;22H[?12l[?25h[?25l[1;21H[K[16;138H1[1;21H[?12l[?25h[?25l[1;20H[K[16;138H0[1;20H[?12l[?25h[?25l[1;19H[K[16;137H19[1;19H[?12l[?25h[?25l[1;18H[K[16;138H8[1;18H[?12l[?25h[?25l[1;17H[K[16;138H7[1;17H[?12l[?25h[?25l[1;16H[K[16;138H6[1;16H[?12l[?25h[?25l[1;15H[K[16;138H5[1;15H[?12l[?25h[?25l[1;14H[K[16;138H4[1;14H[?12l[?25h[?25l[1;13H[K[16;138H3[1;13H[?12l[?25h[?25l[1;12H[K[16;138H2[1;12H[?12l[?25h[?25l[1;11H[K[16;138H1[1;11H[?12l[?25h[?25l[1;10H[K[16;138H0[1;10H[?12l[?25h[?25l[1;9H[K[16;137H9 [1;9H[?12l[?25h[?25l[1;8H[K[16;137H8[1;8H[?12l[?25h[?25l[1;7H[K[16;137H7[1;7H[?12l[?25h[?25l[1;6H[K[16;137H6[1;6H[?12l[?25h[?25l[1;5H[K[16;137H5[1;5H[?12l[?25h[?25l[1;4H[K[16;137H4[1;4H[?12l[?25h[?25l[1;3H[K[16;137H3[1;3H[?12l[?25h[?25l[1;2H[K[16;137H2[1;2H[?12l[?25h[?25l[1;1H[K[16;137H1[1;1H[?12l[?25h[?25l[38;5;130mM[m[16;137H2[1;2H[?12l[?25h[?25l[38;5;130me[m[16;137H3[1;3H[?12l[?25h[?25l[38;5;130mr[m[16;137H4[1;4H[?12l[?25h[?25l[38;5;130mg[m[16;137H5[1;5H[?12l[?25h[?25l[38;5;130me[m[16;137H6[1;6H[?12l[?25h[?25l[38;5;130m [m[16;137H7[1;7H[?12l[?25h[?25l[38;5;130mn[m[16;137H8[1;8H[?12l[?25h[?25l[38;5;130me[m[16;137H9[1;9H[?12l[?25h[?25l[38;5;130mw[m[16;137H10[1;10H[?12l[?25h[?25l[38;5;130m-[m[16;138H1[1;11H[?12l[?25h[?25l[38;5;130mm[m[16;138H2[1;12H[?12l[?25h[?25l[38;5;130me[m[16;138H3[1;13H[?12l[?25h[?25l[38;5;130mt[m[16;138H4[1;14H[?12l[?25h[?25l[38;5;130mh[m[16;138H5[1;15H[?12l[?25h[?25l[38;5;130mo[m[16;138H6[1;16H[?12l[?25h[?25l[38;5;130md[m[16;138H7[1;17H[?12l[?25h[?25l[38;5;130ms[m[16;138H8[1;18H[?12l[?25h[?25l[38;5;130m [m[16;138H9[1;19H[?12l[?25h[?25l[38;5;130mw[m[16;137H20[1;20H[?12l[?25h[?25l[38;5;130mi[m[16;138H1[1;21H[?12l[?25h[?25l[38;5;130mt[m[16;138H2[1;22H[?12l[?25h[?25l[38;5;130mh[m[16;138H3[1;23H[?12l[?25h[?25l[38;5;130m [m[16;138H4[1;24H[?12l[?25h[?25l[38;5;130mm[m[16;138H5[1;25H[?12l[?25h[?25l[38;5;130ma[m[16;138H6[1;26H[?12l[?25h[?25l[38;5;130ms[m[16;138H7[1;27H[?12l[?25h[?25l[38;5;130mt[m[16;138H8[1;28H[?12l[?25h[?25l[38;5;130me[m[16;138H9[1;29H[?12l[?25h[?25l[38;5;130mr[m[16;137H30[1;30H[?12l[?25h[16;1H[K[1;29H[?25l[16;135H1,29[10CAll[1;29H[?12l[?25h[?25l[16;1H".git/MERGE_MSG"[16;135H[K[16;18H7L, 257C written
+[97m[41mE137: Viminfo file is not writable: /home/ogs1/.viminfo[m
+[32mPress ENTER or type command to continue[?12l[?25h
+
+[m[?1l>[?1049lMerge made by the 'recursive' strategy.
+ remote-branches.txt | 2 [32m++[m
+ 1 file changed, 2 insertions(+)
+ create mode 100644 remote-branches.txt
+bash-4.2$ ##Check for merge success
+bash-4.2$ git log --abbrev-commit p-[K--[K[K[K--pretty=oneline --graph --branches -n 3
+[?1h=*   [33maa50102[m Merge new-methods with master[m
+[31m|[m[32m\[m  [m
+[31m|[m * [33mb8da1d2[m More practice with remote branches[m
+[31m|[m * [33m93cca04[m commits for remote branch[m
+[K[?1l>bash-4.2$ ##End of chapter###[K
+bash-4.2$ s[Kexit
+exit
+
+Script done on Wed 04 Dec 2019 08:48:07 PM EST
